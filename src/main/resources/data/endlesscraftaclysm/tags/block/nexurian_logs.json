@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "endlesscraftaclysm:nexurian_log",
+    "endlesscraftaclysm:nexurian_wood",
+    "endlesscraftaclysm:stripped_nexurian_wood",
+    "endlesscraftaclysm:stripped_nexurian_log"
+  ]
+}

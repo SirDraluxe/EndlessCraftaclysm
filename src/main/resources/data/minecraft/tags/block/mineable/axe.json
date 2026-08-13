@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "endlesscraftaclysm:nexurian_stairs",
+    "endlesscraftaclysm:nexurian_hanging_sign",
+    "endlesscraftaclysm:nexurian_door",
+    "endlesscraftaclysm:nexurian_wall_hanging_sign",
+    "endlesscraftaclysm:nexurian_wall_sign",
+    "endlesscraftaclysm:nexurian_planks",
+    "endlesscraftaclysm:nexurian_slab",
+    "endlesscraftaclysm:stripped_nexurian_wood",
+    "endlesscraftaclysm:nexurian_button",
+    "endlesscraftaclysm:nexurian_fence_gate",
+    "endlesscraftaclysm:nexurian_sign",
+    "endlesscraftaclysm:nexurian_trapdoor",
+    "endlesscraftaclysm:nexurian_log",
+    "endlesscraftaclysm:nexurian_wood",
+    "endlesscraftaclysm:nexurian_pressure_plate",
+    "endlesscraftaclysm:nexurian_fence",
+    "endlesscraftaclysm:stripped_nexurian_log"
+  ]
+}

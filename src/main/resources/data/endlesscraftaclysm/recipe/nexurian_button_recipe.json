@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    "endlesscraftaclysm:nexurian_planks"
+  ],
+  "result": {
+    "id": "endlesscraftaclysm:nexurian_button",
+    "count": 1
+  }
+}

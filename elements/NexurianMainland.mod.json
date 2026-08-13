@@ -1,0 +1,105 @@
+{
+  "_fv": 89,
+  "_type": "biome",
+  "definition": {
+    "name": "Nexurian Mainland",
+    "groundBlock": "CUSTOM:NexurianSoil",
+    "undergroundBlock": "CUSTOM:NexurianStone",
+    "underwaterBlock": "CUSTOM:NexurianSilt",
+    "airColor": {
+      "value": -6710785,
+      "falpha": 0.0
+    },
+    "fogColor": {
+      "value": -3355393,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -10066177,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -10066177,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -10066177,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -6710785,
+      "falpha": 0.0
+    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "",
+    "moodSound": "",
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": "ASH",
+    "particlesProbability": 0.5,
+    "rainingPossibility": 1.0,
+    "temperature": 0.8,
+    "spawnBiome": true,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.75,
+      "max": 0.25
+    },
+    "genHumidity": {
+      "min": 0.35,
+      "max": 0.5
+    },
+    "genContinentalness": {
+      "min": 0.02,
+      "max": 0.84
+    },
+    "genErosion": {
+      "min": -0.83,
+      "max": -0.05
+    },
+    "genWeirdness": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "genDepth": {
+      "min": 0.2,
+      "max": 0.9
+    },
+    "treesPerChunk": 2,
+    "vanillaTreeType": "Big trees",
+    "treeType": 1,
+    "minHeight": 7,
+    "treeStem": "CUSTOM:NexurianLog",
+    "treeBranch": "CUSTOM:NexurianLeaves",
+    "treeVines": "",
+    "treeFruits": "",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": true,
+    "spawnPillagerOutpost": true,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "SWAMP",
+    "spawnEntries": []
+  }
+}

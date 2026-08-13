@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "endlesscraftaclysm:block/nexurian_old_fern"
+    },
+    "half=lower": {
+      "model": "endlesscraftaclysm:block/nexurian_old_fern_bottom"
+    }
+  }
+}

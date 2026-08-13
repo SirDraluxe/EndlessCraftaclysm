@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "endlesscraftaclysm:nexurian_energy_fragment",
+    "b": "endlesscraftaclysm:nexurian_starshard"
+  },
+  "result": {
+    "id": "endlesscraftaclysm:nexurian_energy_shard",
+    "count": 1
+  }
+}

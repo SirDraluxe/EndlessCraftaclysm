@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "endlesscraftaclysm:nexurian_rotten_brain",
+    "endlesscraftaclysm:nexurian_battlehog_mane",
+    "endlesscraftaclysm:javanicus_horn",
+    "endlesscraftaclysm:alchemist_flare",
+    "endlesscraftaclysm:nexurian_energy_shard",
+    "endlesscraftaclysm:nexurian_dust",
+    "endlesscraftaclysm:nexurian_bug_husk",
+    "endlesscraftaclysm:nexurian_starshard",
+    "endlesscraftaclysm:nexurian_soul"
+  ],
+  "result": {
+    "id": "endlesscraftaclysm:nexurian_stone_of_memory",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "endlesscraftaclysm:block/nexurian_planks",
+    "bottom": "endlesscraftaclysm:block/nexurian_planks",
+    "top": "endlesscraftaclysm:block/nexurian_planks",
+    "side": "endlesscraftaclysm:block/nexurian_planks"
+  }
+}

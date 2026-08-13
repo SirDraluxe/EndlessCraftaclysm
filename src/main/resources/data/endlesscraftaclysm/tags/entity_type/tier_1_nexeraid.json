@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "endlesscraftaclysm:nexurian_caller_raider",
+    "endlesscraftaclysm:nexurian_beamer_raider",
+    "endlesscraftaclysm:nexurian_alchemist_raider",
+    "endlesscraftaclysm:nexurian_battlehog_raider",
+    "endlesscraftaclysm:nexurian_armored_bug_raider",
+    "endlesscraftaclysm:nexurian_corpse_raider"
+  ]
+}

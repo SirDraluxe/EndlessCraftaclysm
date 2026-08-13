@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:NexurianEnergyFragment",
+      "CUSTOM:NexurianStarshard"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:NexurianEnergyFragment",
+      "CUSTOM:NexurianEnergyFragment",
+      "CUSTOM:NexurianEnergyFragment",
+      "CUSTOM:NexurianEnergyFragment",
+      "CUSTOM:NexurianStarshard",
+      "CUSTOM:NexurianEnergyFragment",
+      "CUSTOM:NexurianEnergyFragment",
+      "CUSTOM:NexurianEnergyFragment",
+      "CUSTOM:NexurianEnergyFragment"
+    ],
+    "recipeReturnStack": "CUSTOM:NexurianEnergyShard",
+    "name": "nexurian_energy_shard_recipe",
+    "namespace": "mod"
+  }
+}

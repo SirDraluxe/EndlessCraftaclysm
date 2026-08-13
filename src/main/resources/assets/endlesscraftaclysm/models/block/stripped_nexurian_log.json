@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "endlesscraftaclysm:block/stripped_nexurian_log_top",
+    "up": "endlesscraftaclysm:block/stripped_nexurian_log_top",
+    "north": "endlesscraftaclysm:block/stripped_nexurian_log",
+    "east": "endlesscraftaclysm:block/stripped_nexurian_log",
+    "south": "endlesscraftaclysm:block/stripped_nexurian_log",
+    "west": "endlesscraftaclysm:block/stripped_nexurian_log",
+    "particle": "endlesscraftaclysm:block/stripped_nexurian_log"
+  }
+}

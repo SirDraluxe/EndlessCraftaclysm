@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 400,
+  "ingredient": "endlesscraftaclysm:battlehog_porkchop",
+  "result": {
+    "id": "endlesscraftaclysm:cooked_battlehog_porkchop"
+  }
+}

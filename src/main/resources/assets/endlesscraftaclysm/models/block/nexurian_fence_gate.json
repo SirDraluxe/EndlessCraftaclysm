@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "endlesscraftaclysm:block/nexurian_planks",
+    "particle": "endlesscraftaclysm:block/nexurian_planks"
+  }
+}

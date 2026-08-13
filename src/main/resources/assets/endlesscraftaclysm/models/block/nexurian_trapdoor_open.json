@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "endlesscraftaclysm:block/nexurian_trapdoor",
+    "particle": "endlesscraftaclysm:block/nexurian_trapdoor"
+  }
+}

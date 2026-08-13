@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "endlesscraftaclysm:block/nexurian_soil_2",
+    "up": "endlesscraftaclysm:block/nexurian_soil_2",
+    "north": "endlesscraftaclysm:block/nexurian_soil_2",
+    "east": "endlesscraftaclysm:block/nexurian_soil_2",
+    "south": "endlesscraftaclysm:block/nexurian_soil_2",
+    "west": "endlesscraftaclysm:block/nexurian_soil_2",
+    "particle": "endlesscraftaclysm:block/nexurian_soil_2"
+  }
+}

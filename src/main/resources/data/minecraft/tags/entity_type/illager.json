@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "endlesscraftaclysm:nexurian_caller_raider",
+    "endlesscraftaclysm:nexurian_alchemist_raider",
+    "endlesscraftaclysm:nexurian_caller",
+    "endlesscraftaclysm:nexurian_alchemist"
+  ]
+}

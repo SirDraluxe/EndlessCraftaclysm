@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:NexurianMilk"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      "Items.WHEAT",
+      "Items.WHEAT",
+      "Items.WHEAT",
+      "Items.WHEAT",
+      "Items.WHEAT",
+      "Items.WHEAT",
+      "Items.WHEAT",
+      "Items.WHEAT",
+      "CUSTOM:NexurianMilk"
+    ],
+    "recipeReturnStack": "CUSTOM:NexurianWheat",
+    "name": "nexurian_wheat_recipe",
+    "namespace": "mod"
+  }
+}

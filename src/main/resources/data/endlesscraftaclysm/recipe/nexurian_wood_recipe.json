@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "endlesscraftaclysm:nexurian_log"
+  },
+  "result": {
+    "id": "endlesscraftaclysm:nexurian_wood",
+    "count": 3
+  }
+}

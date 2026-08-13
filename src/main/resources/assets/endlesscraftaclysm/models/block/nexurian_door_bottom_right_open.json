@@ -1,0 +1,8 @@
+{
+  "parent": "block/door_bottom_right_open",
+  "textures": {
+    "particle": "endlesscraftaclysm:block/nexurian_door_bottom",
+    "bottom": "endlesscraftaclysm:block/nexurian_door_bottom",
+    "top": "endlesscraftaclysm:block/nexurian_door_top"
+  }
+}

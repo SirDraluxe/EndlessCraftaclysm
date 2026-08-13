@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "endlesscraftaclysm:block/nexurian_old_fern_bottom",
+    "particle": "endlesscraftaclysm:block/nexurian_old_fern_top"
+  }
+}

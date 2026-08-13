@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Scratch",
+    "splashName": "Splash Potion of Scratch",
+    "lingeringName": "Lingering Potion of Scratch",
+    "arrowName": "Arrow of Scratch",
+    "effects": [
+      {
+        "effect": "CUSTOM:Scratch",
+        "duration": 9600,
+        "infinite": false,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

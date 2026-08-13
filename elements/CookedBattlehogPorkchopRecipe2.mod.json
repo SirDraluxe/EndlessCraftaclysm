@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:BattlehogPorkchop"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 400,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smokingInputStack": "CUSTOM:BattlehogPorkchop",
+    "smokingReturnStack": "CUSTOM:CookedBattlehogPorkchop",
+    "name": "cooked_battlehog_porkchop_recipe_2",
+    "namespace": "mod"
+  }
+}

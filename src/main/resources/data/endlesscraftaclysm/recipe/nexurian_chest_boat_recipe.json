@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "chest_boat",
+  "category": "misc",
+  "ingredients": [
+    "endlesscraftaclysm:nexurian_boat",
+    "minecraft:chest"
+  ],
+  "result": {
+    "id": "endlesscraftaclysm:nexurian_chest_boat",
+    "count": 1
+  }
+}

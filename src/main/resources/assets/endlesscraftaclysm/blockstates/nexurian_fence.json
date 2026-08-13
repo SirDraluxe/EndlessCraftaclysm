@@ -1,0 +1,48 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "endlesscraftaclysm:block/nexurian_fence_post"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "endlesscraftaclysm:block/nexurian_fence",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "endlesscraftaclysm:block/nexurian_fence",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "endlesscraftaclysm:block/nexurian_fence",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "endlesscraftaclysm:block/nexurian_fence",
+        "y": 90,
+        "uvlock": true
+      }
+    }
+  ]
+}

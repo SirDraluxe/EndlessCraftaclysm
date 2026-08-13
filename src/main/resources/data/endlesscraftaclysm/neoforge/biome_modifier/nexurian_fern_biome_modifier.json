@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "endlesscraftaclysm:nexurian_mainland",
+  "features": "endlesscraftaclysm:nexurian_fern",
+  "step": "vegetal_decoration"
+}

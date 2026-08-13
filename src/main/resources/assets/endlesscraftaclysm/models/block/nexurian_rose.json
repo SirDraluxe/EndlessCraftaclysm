@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "endlesscraftaclysm:block/nexurian_rose",
+    "particle": "endlesscraftaclysm:block/nexurian_rose"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "endlesscraftaclysm:block/nexurian_pressure_plate"
+    },
+    "powered=true": {
+      "model": "endlesscraftaclysm:block/nexurian_pressure_plate_down"
+    }
+  }
+}

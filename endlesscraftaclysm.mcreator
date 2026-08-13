@@ -1,0 +1,2607 @@
+{
+  "mod_elements": [
+    {
+      "name": "NexurianLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_log.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianLogBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_log.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_log.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_log.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_log.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_wood.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_wood.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_wood.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianWoodBlock.java",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_wood.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_wood.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "StrippedNexurianLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_nexurian_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/block/stripped_nexurian_log.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/stripped_nexurian_log.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/stripped_nexurian_log.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/stripped_nexurian_log.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/StrippedNexurianLogBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/stripped_nexurian_log.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "StrippedNexurianWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_nexurian_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/stripped_nexurian_wood.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/stripped_nexurian_wood.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/stripped_nexurian_wood.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/stripped_nexurian_wood.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/StrippedNexurianWoodBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/stripped_nexurian_wood.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianPlanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianPlanksBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_planks.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_planks.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_planks.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_planks.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_planks.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_leaves.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_leaves.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianLeavesBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_leaves.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_leaves.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_stairs_outer.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianStairsBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_stairs_inner.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_stairs.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_stairs.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_stairs.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_stairs.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_stairs.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_slab_full.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_slab.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_slab.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_slab.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_slab.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_slab.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianSlabBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_slab_top.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_fence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianFenceBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_fence.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_fence.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_fence.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_fence.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_fence_post.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_fence.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_fence_inventory.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianFenceGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_fence_gate.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_fence_gate_open.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianFenceGateBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_fence_gate.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_fence_gate.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_fence_gate_wall_open.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_fence_gate.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_fence_gate.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_fence_gate_wall.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_door_top_left.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_door.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_door_top_left_open.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_door.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_door_bottom_right.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_door_bottom_left.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_door_top_right.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_door_bottom_left_open.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_door.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_door.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_door_top_right_open.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_door_bottom_right_open.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianDoorBlock.java"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianTrapdoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_trapdoor.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_trapdoor.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_trapdoor_top.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_trapdoor.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_trapdoor.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianTrapdoorBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_trapdoor.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_trapdoor_open.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianPressurePlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_pressure_plate.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_pressure_plate.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianPressurePlateBlock.java",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_pressure_plate.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_pressure_plate.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_pressure_plate_down.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_pressure_plate.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_button_pressed.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_button.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_button.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_button_inventory.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianButtonBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_button.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_button.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_button.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_sign",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianSignBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_sign.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianWallSignBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_wall_sign.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_sign.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_sign.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_sign.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_sign.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianHangingSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_hanging_sign",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianHangingSignBlock.java",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_hanging_sign.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_hanging_sign.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_hanging_sign.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_hanging_sign.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianWallHangingSignBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_wall_hanging_sign.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_hanging_sign.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianBoat",
+      "type": "specialentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_boat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_boat.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_boat.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianBoatEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianChestBoat",
+      "type": "specialentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_chest_boat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_chest_boat.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_chest_boat.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianChestBoatEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianLeavesComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_leaves_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_wood_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_wood_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "StrippedNexurianWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_nexurian_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/stripped_nexurian_wood_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/stripped_nexurian_wood_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianPlanksRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_planks_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_planks_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_stairs_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_slab_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_slab_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_fence_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_fence_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_fence_gate_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianDoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_door_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_door_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianTrapdoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_trapdoor_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_trapdoor_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianPressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_pressure_plate_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianButtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_button_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_button_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_sign_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_sign_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_hanging_sign_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianBoatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_boat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_boat_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_boat_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianChestBoatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_chest_boat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_chest_boat_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_chest_boat_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianApple",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_apple",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_apple.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianAppleItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_apple.json"
+        ]
+      },
+      "path": "~/Nexurian/FoodAndFoodstuff"
+    },
+    {
+      "name": "NexurianDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianDustItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_dust.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_dust.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianBugHusk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_bug_husk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianBugHuskItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_bug_husk.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_bug_husk.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianSapling",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_sapling",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_sapling.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_sapling.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_sapling.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_sapling.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianSaplingBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_sapling.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff/Plant"
+    },
+    {
+      "name": "NexurianLeavesLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_leaves_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_leaves.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianLeavesAdditionalHarvestCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_leaves_additional_harvest_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianLeavesAdditionalHarvestConditionProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianMainland",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_mainland",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/worldgen/configured_feature/nexurian_mainland_tree.json",
+          "src/main/resources/data/endlesscraftaclysm/worldgen/biome/nexurian_mainland.json",
+          "src/main/resources/data/endlesscraftaclysm/worldgen/placed_feature/nexurian_mainland_tree.json"
+        ]
+      },
+      "path": "~/Nexurian"
+    },
+    {
+      "name": "NexurianBugHive",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_bug_hive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/entity/NexurianBugHiveBlockEntity.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_bug_hive.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_bug_hive.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_bug_hive.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_bug_hive.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianBugHiveBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_bug_hive.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianTreeFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_tree_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/worldgen/configured_feature/nexurian_tree_feature.json",
+          "src/main/resources/data/endlesscraftaclysm/worldgen/placed_feature/nexurian_tree_feature.json",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_tree_feature_biome_modifier.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianSoil",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_soil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_soil.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_soil.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianSoilBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_soil.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_soil.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_soil.json"
+        ]
+      },
+      "path": "~/Nexurian/Terrain"
+    },
+    {
+      "name": "NexurianSilt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_silt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_silt.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_silt.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_silt.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_silt.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_silt.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianSiltBlock.java"
+        ]
+      },
+      "path": "~/Nexurian/Terrain"
+    },
+    {
+      "name": "NexurianStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_stone.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianStoneBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_stone.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_stone.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_stone.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_stone.json"
+        ]
+      },
+      "path": "~/Nexurian/Terrain"
+    },
+    {
+      "name": "NexurianCobblestone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_cobblestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_cobblestone.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_cobblestone.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianCobblestoneBlock.java",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_cobblestone.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_cobblestone.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_cobblestone.json"
+        ]
+      },
+      "path": "~/Nexurian/Terrain"
+    },
+    {
+      "name": "NexurianFern",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_fern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_fern.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_fern.json",
+          "src/main/resources/data/endlesscraftaclysm/worldgen/configured_feature/nexurian_fern.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_fern.json",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_fern_biome_modifier.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_fern.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianFernBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_fern.json",
+          "src/main/resources/data/endlesscraftaclysm/worldgen/placed_feature/nexurian_fern.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff/Plant"
+    },
+    {
+      "name": "NexurianOldFern",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_old_fern",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_old_fern.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_old_fern.json",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_old_fern_biome_modifier.json",
+          "src/main/resources/data/endlesscraftaclysm/worldgen/configured_feature/nexurian_old_fern.json",
+          "src/main/resources/data/endlesscraftaclysm/worldgen/placed_feature/nexurian_old_fern.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_old_fern.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_old_fern_bottom.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_old_fern.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianOldFernBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_old_fern.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff/Plant"
+    },
+    {
+      "name": "NexurianRose",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_rose",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_rose.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_rose.json",
+          "src/main/resources/data/endlesscraftaclysm/worldgen/configured_feature/nexurian_rose.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_rose.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianRoseBlock.java",
+          "src/main/resources/data/endlesscraftaclysm/worldgen/placed_feature/nexurian_rose.json",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_rose_biome_modifier.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_rose.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_rose.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff/Plant"
+    },
+    {
+      "name": "NexurianFiber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_fiber",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_fiber.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianFiberItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_fiber.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianDeadgrass",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_deadgrass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/worldgen/configured_feature/nexurian_deadgrass.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianDeadgrassBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_deadgrass.json",
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_deadgrass.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_deadgrass.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_deadgrass.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_deadgrass.json",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_deadgrass_biome_modifier.json",
+          "src/main/resources/data/endlesscraftaclysm/worldgen/placed_feature/nexurian_deadgrass.json"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff/Plant"
+    },
+    {
+      "name": "NexurianBug",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_bug",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_bug_spawn_egg.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_bug_spawn_egg.json",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_bug_biome_modifier.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianBugRenderer.java",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianBugEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianBugHiveOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_bug_hive_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianBugHiveOnTickUpdateProcedure.java"
+        ],
+        "return_type": "logic"
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianBugHiveBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_bug_hive_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianBugHiveBlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianBugHiveVibrationReceived",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_bug_hive_vibration_received",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianBugHiveVibrationReceivedProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/WoodAndWoodstuff"
+    },
+    {
+      "name": "NexurianCorpse",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_corpse",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_corpse_spawn_egg.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianCorpseRenderer.java",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_corpse_biome_modifier.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_corpse_spawn_egg.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianCorpseEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianCavalrySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_cavalry_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianCavalrySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "ScratchEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scratch_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/ScratchEffectStartedappliedProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "Scratch",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scratch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/potion/ScratchMobEffect.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "ScratchPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scratch_potion",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "EndurancedScratchPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enduranced_scratch_potion",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "NexurianAlchemist",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_alchemist",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_alchemist_biome_modifier.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianAlchemistEntity.java",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianAlchemistRenderer.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_alchemist_spawn_egg.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_alchemist_spawn_egg.json"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "ScratchPotionProjectile1ProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scratch_potion_projectile_1_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/ScratchPotionProjectile1ProjectileHitsBlockProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "ScratchPotionProjectile1",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scratch_potion_projectile_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/ScratchPotionProjectile1Entity.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "NexurianCallerProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_caller_projectile_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianCallerProjectileProjectileHitsBlockProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "NexurianCallerProjectileProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_caller_projectile_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianCallerProjectileProjectileHitsPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianCallerProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_caller_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianCallerProjectileEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "NexurianCallerEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_caller_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianCallerEntityDiesProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianCaller",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_caller",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_caller_spawn_egg.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianCallerEntity.java",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_caller_biome_modifier.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianCallerRenderer.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_caller_spawn_egg.json"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianBeamerProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_beamer_projectile_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianBeamerProjectileProjectileHitsBlockProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "NexurianBeamerProjectileProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_beamer_projectile_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianBeamerProjectileProjectileHitsPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "NexurianBeamerProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_beamer_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianBeamerProjectileEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "NexurianBeamer",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_beamer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_beamer_spawn_egg.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_beamer_spawn_egg.json",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_beamer_biome_modifier.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianBeamerEntity.java",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianBeamerRenderer.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianBattlehog",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_battlehog",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_battlehog_spawn_egg.json",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_battlehog_biome_modifier.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianBattlehogRenderer.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_battlehog_spawn_egg.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianBattlehogEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianJavanicus",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_javanicus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_javanicus_spawn_egg.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianJavanicusEntity.java",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianJavanicusRenderer.java",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_javanicus_biome_modifier.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_javanicus_spawn_egg.json"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianMilk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_milk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianMilkItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_milk.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_milk.json"
+        ]
+      },
+      "path": "~/Nexurian/FoodAndFoodstuff"
+    },
+    {
+      "name": "NexurianDmg",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_dmg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/damage_type/nexurian_dmg.json"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "Purify",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purify",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/enchantment/purify.json"
+        ]
+      },
+      "path": "~/Nexurian/Enchantments"
+    },
+    {
+      "name": "NexurianPurifiedMilk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_purified_milk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianPurifiedMilkItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_purified_milk.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_purified_milk.json"
+        ]
+      },
+      "path": "~/Nexurian/FoodAndFoodstuff"
+    },
+    {
+      "name": "NexurianJavanicusRightclickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_javanicus_rightclicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianJavanicusRightclickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianWheat",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_wheat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianWheatItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_wheat.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_wheat.json"
+        ]
+      },
+      "path": "~/Nexurian/FoodAndFoodstuff"
+    },
+    {
+      "name": "NexurianWheatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_wheat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_wheat_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_wheat_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/FoodAndFoodstuff"
+    },
+    {
+      "name": "NexurianBattlehogMane",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_battlehog_mane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianBattlehogManeItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_battlehog_mane.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_battlehog_mane.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianEnergyFragment",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_energy_fragment",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_energy_fragment.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianEnergyFragmentItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_energy_fragment.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianFlesh",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_flesh",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianFleshItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_flesh.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_flesh.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianRottenBrain",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_rotten_brain",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianRottenBrainItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_rotten_brain.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_rotten_brain.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianStarshard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_starshard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_starshard.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianStarshardItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_starshard.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianEnchantedDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_enchanted_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_enchanted_dust.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianEnchantedDustItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_enchanted_dust.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "AlchemistFlare",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemist_flare",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/AlchemistFlareItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/alchemist_flare.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/alchemist_flare.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianLeather",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_leather",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_leather.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianLeatherItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_leather.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianEnergyShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_energy_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianEnergyShardItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_energy_shard.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_energy_shard.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianEnergyShardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_energy_shard_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/nexurian_energy_shard_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_energy_shard_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "BattlehogPorkchop",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battlehog_porkchop",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/battlehog_porkchop.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/BattlehogPorkchopItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/battlehog_porkchop.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "CookedBattlehogPorkchop",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_battlehog_porkchop",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/cooked_battlehog_porkchop.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/cooked_battlehog_porkchop.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/CookedBattlehogPorkchopItem.java"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "CookedBattlehogPorkchopRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_battlehog_porkchop_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/cooked_battlehog_porkchop_recipe.json",
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/cooked_battlehog_porkchop_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "CookedBattlehogPorkchopRecipe2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_battlehog_porkchop_recipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/advancement/recipes/cooked_battlehog_porkchop_recipe_2.json",
+          "src/main/resources/data/endlesscraftaclysm/recipe/cooked_battlehog_porkchop_recipe_2.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianSoul",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_soul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianSoulItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_soul.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_soul.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianSoulstone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_soulstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_soulstone.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianSoulstoneItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_soulstone.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "JavanicusHorn",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "javanicus_horn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/javanicus_horn.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/JavanicusHornItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/javanicus_horn.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianStargazer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_stargazer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/loot_table/blocks/nexurian_stargazer.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_stargazer.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/block/NexurianStargazerBlock.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/block/nexurian_stargazer.json",
+          "src/main/resources/assets/endlesscraftaclysm/blockstates/nexurian_stargazer.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_stargazer.json"
+        ]
+      },
+      "path": "~/Nexurian/NexurianElementalRaid"
+    },
+    {
+      "name": "NexurianStoneOfMemory",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_stone_of_memory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianStoneOfMemoryItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_stone_of_memory.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_stone_of_memory.json"
+        ]
+      },
+      "path": "~/Nexurian/NexurianElementalRaid"
+    },
+    {
+      "name": "NexurianStoneOfMemoryRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_stone_of_memory_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/recipe/nexurian_stone_of_memory_recipe.json"
+        ]
+      },
+      "path": "~/Nexurian/NexurianElementalRaid"
+    },
+    {
+      "name": "NexurianStargazerOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_stargazer_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianStargazerOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/NexurianElementalRaid"
+    },
+    {
+      "name": "NexurianProioxis",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_proioxis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianProioxisRenderer.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_proioxis_spawn_egg.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_proioxis_spawn_egg.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianProioxisEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianElementalRaidTier1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_elemental_raid_tier_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianElementalRaidTier1Procedure.java"
+        ]
+      },
+      "path": "~/Nexurian/NexurianElementalRaid"
+    },
+    {
+      "name": "NexurianTurretRaidSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_turret_raid_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianTurretRaidSpawnProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/NexurianElementalRaid"
+    },
+    {
+      "name": "NexurianCorpseOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_corpse_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianCorpseOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianAlchemistOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_alchemist_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianAlchemistOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianCallerOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_caller_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianCallerOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianBeamerOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_beamer_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianBeamerOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianArmoredBugRaider",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_armored_bug_raider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianArmoredBugRaiderEntity.java",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianArmoredBugRaiderRenderer.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_armored_bug_raider_spawn_egg.json"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianCorpseRaider",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_corpse_raider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianCorpseRaiderRenderer.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_corpse_raider_spawn_egg.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianCorpseRaiderEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianAlchemistRaider",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_alchemist_raider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianAlchemistRaiderRenderer.java",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianAlchemistRaiderEntity.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_alchemist_raider_spawn_egg.json"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianCallerRaider",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_caller_raider",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_caller_raider_spawn_egg.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianCallerRaiderEntity.java",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianCallerRaiderRenderer.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianBeamerRaider",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_beamer_raider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianBeamerRaiderEntity.java",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianBeamerRaiderRenderer.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_beamer_raider_spawn_egg.json"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianBattlehogRaider",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_battlehog_raider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianBattlehogRaiderEntity.java",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianBattlehogRaiderRenderer.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_battlehog_raider_spawn_egg.json"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianArmoredBugRaiderEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_armored_bug_raider_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianArmoredBugRaiderEntityDiesProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianCallerRaiderEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_caller_raider_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianCallerRaiderEntityDiesProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianCallerOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_caller_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianCallerOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "NexurianERaidActive",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "NexurianERaidWave",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "NexurianERaidMobRemains",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "NexurianERaidCenterX",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "NexurianERaidCenterY",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "NexurianERaidCenterZ",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "NexurianERaidMaximumWaveTier1",
+      "type": "number",
+      "scope": "global",
+      "value": "9.0"
+    },
+    {
+      "name": "NexurianERaidMobCount",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "NexurianERaidWaveCap",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:mod:nexurian_logs": [
+      "CUSTOM:NexurianLog",
+      "CUSTOM:NexurianWood",
+      "CUSTOM:StrippedNexurianLog",
+      "CUSTOM:StrippedNexurianWood"
+    ],
+    "BLOCKS:minecraft:logs_that_burn": [
+      "TAG:mod:nexurian_logs"
+    ],
+    "BLOCKS:minecraft:planks": [
+      "CUSTOM:NexurianPlanks"
+    ],
+    "ITEMS:mod:nexurian_logs": [
+      "CUSTOM:NexurianLog",
+      "CUSTOM:NexurianWood",
+      "CUSTOM:StrippedNexurianLog",
+      "CUSTOM:StrippedNexurianWood"
+    ],
+    "ITEMS:minecraft:logs_that_burn": [
+      "TAG:mod:nexurian_logs"
+    ],
+    "ITEMS:minecraft:planks": [
+      "CUSTOM:NexurianPlanks"
+    ],
+    "ENTITIES:mod:tier_1_nexeraid": [
+      "CUSTOM:NexurianArmoredBugRaider",
+      "CUSTOM:NexurianCorpseRaider",
+      "CUSTOM:NexurianAlchemistRaider",
+      "CUSTOM:NexurianCallerRaider",
+      "CUSTOM:NexurianBeamerRaider",
+      "CUSTOM:NexurianBattlehogRaider"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~NexurianHangingSign@CUSTOM:NexurianHangingSign.wall",
+      "~NexurianHangingSign@CUSTOM:NexurianHangingSign",
+      "~NexurianSign@CUSTOM:NexurianSign",
+      "~NexurianSign@CUSTOM:NexurianSign.wall",
+      "~NexurianButton@CUSTOM:NexurianButton",
+      "~NexurianPressurePlate@CUSTOM:NexurianPressurePlate",
+      "~NexurianTrapdoor@CUSTOM:NexurianTrapdoor",
+      "~NexurianDoor@CUSTOM:NexurianDoor",
+      "~NexurianFenceGate@CUSTOM:NexurianFenceGate",
+      "~NexurianFence@CUSTOM:NexurianFence",
+      "~NexurianSlab@CUSTOM:NexurianSlab",
+      "~NexurianStairs@CUSTOM:NexurianStairs",
+      "~NexurianPlanks@CUSTOM:NexurianPlanks",
+      "~StrippedNexurianWood@CUSTOM:StrippedNexurianWood",
+      "~StrippedNexurianLog@CUSTOM:StrippedNexurianLog",
+      "~NexurianWood@CUSTOM:NexurianWood",
+      "~NexurianLog@CUSTOM:NexurianLog"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~NexurianLeaves@CUSTOM:NexurianLeaves"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~NexurianLeaves@CUSTOM:NexurianLeaves"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~NexurianStairs@CUSTOM:NexurianStairs"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~NexurianSlab@CUSTOM:NexurianSlab"
+    ],
+    "BLOCKS:minecraft:wooden_fences": [
+      "~NexurianFence@CUSTOM:NexurianFence"
+    ],
+    "BLOCKS:minecraft:wooden_doors": [
+      "~NexurianDoor@CUSTOM:NexurianDoor"
+    ],
+    "BLOCKS:minecraft:wooden_trapdoors": [
+      "~NexurianTrapdoor@CUSTOM:NexurianTrapdoor"
+    ],
+    "BLOCKS:minecraft:wooden_pressure_plates": [
+      "~NexurianPressurePlate@CUSTOM:NexurianPressurePlate"
+    ],
+    "BLOCKS:minecraft:wooden_buttons": [
+      "~NexurianButton@CUSTOM:NexurianButton"
+    ],
+    "BLOCKS:minecraft:standing_signs": [
+      "~NexurianSign@CUSTOM:NexurianSign"
+    ],
+    "BLOCKS:minecraft:wall_signs": [
+      "~NexurianSign@CUSTOM:NexurianSign.wall"
+    ],
+    "BLOCKS:minecraft:ceiling_hanging_signs": [
+      "~NexurianHangingSign@CUSTOM:NexurianHangingSign"
+    ],
+    "BLOCKS:minecraft:wall_hanging_signs": [
+      "~NexurianHangingSign@CUSTOM:NexurianHangingSign.wall"
+    ],
+    "ENTITIES:minecraft:boat": [
+      "~NexurianBoat@CUSTOM:NexurianBoat"
+    ],
+    "ITEMS:minecraft:boats": [
+      "~NexurianBoat@CUSTOM:NexurianBoat"
+    ],
+    "ENTITIES:c:boats": [
+      "~NexurianChestBoat@CUSTOM:NexurianChestBoat"
+    ],
+    "ITEMS:minecraft:chest_boats": [
+      "~NexurianChestBoat@CUSTOM:NexurianChestBoat"
+    ],
+    "BLOCKS:minecraft:saplings": [
+      "~NexurianSapling@CUSTOM:NexurianSapling"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft": [
+      "~NexurianMainland@CUSTOM:NexurianMainland"
+    ],
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~NexurianMainland@CUSTOM:NexurianMainland"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft_mesa": [
+      "~NexurianMainland@CUSTOM:NexurianMainland"
+    ],
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~NexurianMainland@CUSTOM:NexurianMainland"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_swamp": [
+      "~NexurianMainland@CUSTOM:NexurianMainland"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~NexurianSilt@CUSTOM:NexurianSilt",
+      "~NexurianSoil@CUSTOM:NexurianSoil"
+    ],
+    "ENTITIES:minecraft:arthropod": [
+      "~NexurianArmoredBugRaider@CUSTOM:NexurianArmoredBugRaider",
+      "~NexurianBug@CUSTOM:NexurianBug"
+    ],
+    "ENTITIES:minecraft:undead": [
+      "~NexurianCorpseRaider@CUSTOM:NexurianCorpseRaider",
+      "~NexurianCorpse@CUSTOM:NexurianCorpse"
+    ],
+    "ENTITIES:minecraft:illager": [
+      "~NexurianCallerRaider@CUSTOM:NexurianCallerRaider",
+      "~NexurianAlchemistRaider@CUSTOM:NexurianAlchemistRaider",
+      "~NexurianCaller@CUSTOM:NexurianCaller",
+      "~NexurianAlchemist@CUSTOM:NexurianAlchemist"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~Purify@CUSTOM:Purify"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~Purify@CUSTOM:Purify"
+    ],
+    "ENCHANTMENTS:minecraft:non_treasure": [
+      "~Purify@CUSTOM:Purify"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CookedBattlehogPorkchop@CUSTOM:CookedBattlehogPorkchop",
+      "~BattlehogPorkchop@CUSTOM:BattlehogPorkchop"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.endlesscraftaclysm.nexurian_log": "Nexurian Log",
+      "item.endlesscraftaclysm.nexurian_wood": "Nexurian Wood",
+      "item.endlesscraftaclysm.stripped_nexurian_log": "Stripped Nexurian Log",
+      "item.endlesscraftaclysm.stripped_nexurian_wood": "Stripped Nexurian Wood",
+      "item.endlesscraftaclysm.nexurian_planks": "Nexurian Planks",
+      "item.endlesscraftaclysm.nexurian_leaves": "Nexurian Leaves",
+      "item.endlesscraftaclysm.nexurian_stairs": "Nexurian Stairs",
+      "item.endlesscraftaclysm.nexurian_slab": "Nexurian Slab",
+      "item.endlesscraftaclysm.nexurian_fence": "Nexurian Fence",
+      "item.endlesscraftaclysm.nexurian_fence_gate": "Nexurian Fence Gate",
+      "item.endlesscraftaclysm.nexurian_door": "Nexurian Door",
+      "item.endlesscraftaclysm.nexurian_trapdoor": "Nexurian Trapdoor",
+      "item.endlesscraftaclysm.nexurian_pressure_plate": "Nexurian Pressure Plate",
+      "item.endlesscraftaclysm.nexurian_button": "Nexurian Button",
+      "item.endlesscraftaclysm.nexurian_sign": "Nexurian Sign",
+      "item.endlesscraftaclysm.nexurian_hanging_sign": "Nexurian Hanging Sign",
+      "entity.endlesscraftaclysm.nexurian_boat": "Nexurian Boat",
+      "item.endlesscraftaclysm.nexurian_boat": "Nexurian Boat",
+      "entity.endlesscraftaclysm.nexurian_chest_boat": "Nexurian Boat with Chest",
+      "item.endlesscraftaclysm.nexurian_chest_boat": "Nexurian Boat with Chest",
+      "item.endlesscraftaclysm.nexurian_apple": "Nexurian Apple",
+      "item.endlesscraftaclysm.nexurian_dust": "Nexurian Dust",
+      "item.endlesscraftaclysm.nexurian_bug_husk": "Nexurian Bug Husk",
+      "item.endlesscraftaclysm.nexurian_sapling": "Nexurian Sapling",
+      "biome.endlesscraftaclysm.nexurian_mainland": "Nexurian Mainland",
+      "item.endlesscraftaclysm.nexurian_bug_hive": "Nexurian Bug Hive",
+      "item.endlesscraftaclysm.nexurian_soil": "Nexurian Soil",
+      "item.endlesscraftaclysm.nexurian_silt": "Nexurian Silt",
+      "item.endlesscraftaclysm.nexurian_stone": "Nexurian Stone",
+      "item.endlesscraftaclysm.nexurian_cobblestone": "Nexurian Stone",
+      "item.endlesscraftaclysm.nexurian_fern": "Nexurian Fern",
+      "item.endlesscraftaclysm.nexurian_old_fern": "Nexurian Old Fern",
+      "item.endlesscraftaclysm.nexurian_rose": "Nexurian Rose",
+      "item.endlesscraftaclysm.nexurian_fiber": "Nexurian Fiber",
+      "item.endlesscraftaclysm.nexurian_deadgrass": "Nexurian Deadgrass",
+      "entity.endlesscraftaclysm.nexurian_bug": "Nexurian Armored Bug",
+      "item.endlesscraftaclysm.nexurian_bug_spawn_egg": "Nexurian Armored Bug Spawn Egg",
+      "item.endlesscraftaclysm.nexurian_corpse_spawn_egg": "Nexurian Corpse Spawn Egg",
+      "entity.endlesscraftaclysm.nexurian_corpse": "Nexurian Corpse",
+      "effect.endlesscraftaclysm.scratch": "Scratch",
+      "item.minecraft.splash_potion.effect.scratch_potion": "Splash Potion of Scratch",
+      "item.minecraft.tipped_arrow.effect.scratch_potion": "Arrow of Scratch",
+      "item.minecraft.lingering_potion.effect.scratch_potion": "Lingering Potion of Scratch",
+      "item.minecraft.potion.effect.scratch_potion": "Potion of Scratch",
+      "item.minecraft.lingering_potion.effect.enduranced_scratch_potion": "Lingering Potion of Scratch",
+      "item.minecraft.splash_potion.effect.enduranced_scratch_potion": "Splash Potion of Scratch",
+      "item.minecraft.potion.effect.enduranced_scratch_potion": "Potion of Scratch",
+      "item.minecraft.tipped_arrow.effect.enduranced_scratch_potion": "Arrow of Scratch",
+      "entity.endlesscraftaclysm.nexurian_alchemist": "Nexurian Alchemist",
+      "item.endlesscraftaclysm.nexurian_alchemist_spawn_egg": "Nexurian Alchemist Spawn Egg",
+      "item.endlesscraftaclysm.nexurian_caller_spawn_egg": "Nexurian Caller Spawn Egg",
+      "entity.endlesscraftaclysm.nexurian_caller": "Nexurian Caller",
+      "item.endlesscraftaclysm.nexurian_beamer_spawn_egg": "Nexurian Beamer Spawn Egg",
+      "entity.endlesscraftaclysm.nexurian_beamer": "Nexurian Beamer",
+      "item.endlesscraftaclysm.nexurian_battlehog_spawn_egg": "Nexurian Battlehog Spawn Egg",
+      "entity.endlesscraftaclysm.nexurian_battlehog": "Nexurian Battlehog",
+      "item.endlesscraftaclysm.nexurian_javanicus_spawn_egg": "Nexurian Javanicus Spawn Egg",
+      "entity.endlesscraftaclysm.nexurian_javanicus": "Nexurian Javanicus",
+      "item.endlesscraftaclysm.nexurian_milk": "Nexurian Milk",
+      "death.attack.nexurian_dmg.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.nexurian_dmg": "%1$s died",
+      "death.attack.nexurian_dmg.player": "%1$s died whilst trying to escape %2$s",
+      "enchantment.endlesscraftaclysm.purify": "Purify",
+      "item.endlesscraftaclysm.nexurian_purified_milk": "Nexurian Purified Milk",
+      "item.endlesscraftaclysm.nexurian_wheat": "Nexurian Wheat",
+      "item.endlesscraftaclysm.nexurian_battlehog_mane": "Nexurian Battlehog Mane",
+      "item.endlesscraftaclysm.nexurian_energy_fragment": "Nexurian Energy Fragment",
+      "item.endlesscraftaclysm.nexurian_flesh": "Nexurian Flesh",
+      "item.endlesscraftaclysm.nexurian_rotten_brain": "Nexurian Rotten Brain",
+      "item.endlesscraftaclysm.nexurian_starshard": "Nexurian Starshard",
+      "item.endlesscraftaclysm.nexurian_enchanted_dust": "Nexurian Enchanted Dust",
+      "item.endlesscraftaclysm.alchemist_flare": "Alchemist Flare",
+      "item.endlesscraftaclysm.nexurian_leather": "Nexurian Leather",
+      "item.endlesscraftaclysm.nexurian_energy_shard": "Nexurian Energy Shard",
+      "item.endlesscraftaclysm.battlehog_porkchop": "Battlehog Porkchop",
+      "item.endlesscraftaclysm.cooked_battlehog_porkchop": "Cooked Battlehog Porkchop",
+      "item.endlesscraftaclysm.nexurian_soul": "Nexurian Soul",
+      "item.endlesscraftaclysm.nexurian_soulstone": "Nexurian Soulstone",
+      "item.endlesscraftaclysm.javanicus_horn": "Javanicus Horn",
+      "item.endlesscraftaclysm.nexurian_stargazer": "Nexurian Stargazer",
+      "item.endlesscraftaclysm.nexurian_stone_of_memory": "Nexurian Stone Of Memory",
+      "entity.endlesscraftaclysm.nexurian_proioxis": "Nexurian Proioxis",
+      "item.endlesscraftaclysm.nexurian_proioxis_spawn_egg": "Nexurian Proioxis Spawn Egg",
+      "entity.endlesscraftaclysm.nexurian_armored_bug_raider": "Nexurian Armored Bug",
+      "entity.endlesscraftaclysm.nexurian_corpse_raider": "Nexurian Corpse",
+      "entity.endlesscraftaclysm.nexurian_alchemist_raider": "Nexurian Alchemist",
+      "entity.endlesscraftaclysm.nexurian_caller_raider": "Nexurian Caller",
+      "entity.endlesscraftaclysm.nexurian_beamer_raider": "Nexurian Beamer",
+      "entity.endlesscraftaclysm.nexurian_battlehog_raider": "Nexurian Battlehog"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/endlesscraftaclysm/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/mixin/BiomeSourcePresetMixin.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/mixin/LevelStorageSourceMixin.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModBiomes.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModWoodTypes.java",
+      "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModMobEffects.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModPotions.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModBlocks.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModBlockEntities.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModItems.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModEntities.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModEntityRenderers.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/EndlesscraftaclysmMod.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModDispenseBehaviors.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/endlesscraftaclysm.mixins.json",
+      "src/main/java/net/mcreator/endlesscraftaclysm/network/EndlesscraftaclysmModVariables.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModTabs.java",
+      "src/main/java/net/mcreator/endlesscraftaclysm/init/EndlesscraftaclysmModModels.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Nexurian",
+        "children": [
+          {
+            "name": "WoodAndWoodstuff",
+            "children": [
+              {
+                "name": "Plant",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "FoodAndFoodstuff",
+            "children": []
+          },
+          {
+            "name": "Misc",
+            "children": []
+          },
+          {
+            "name": "Terrain",
+            "children": []
+          },
+          {
+            "name": "Mobs",
+            "children": []
+          },
+          {
+            "name": "Effects",
+            "children": []
+          },
+          {
+            "name": "ProjectileDump",
+            "children": []
+          },
+          {
+            "name": "Enchantments",
+            "children": []
+          },
+          {
+            "name": "NexurianElementalRaid",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "endlesscraftaclysm",
+    "modName": "EndlessCraftaclysm",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-26.1.2",
+    "modElementsPackage": "net.mcreator.endlesscraftaclysm"
+  },
+  "mcreatorVersion": 202600233218
+}

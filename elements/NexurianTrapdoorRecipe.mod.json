@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "wooden_trapdoor",
+    "unlockingItems": [
+      "CUSTOM:NexurianPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:NexurianPlanks",
+      "CUSTOM:NexurianPlanks",
+      "CUSTOM:NexurianPlanks",
+      "CUSTOM:NexurianPlanks",
+      "CUSTOM:NexurianPlanks",
+      "CUSTOM:NexurianPlanks",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:NexurianTrapdoor",
+    "name": "nexurian_trapdoor_recipe",
+    "namespace": "mod"
+  }
+}

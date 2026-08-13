@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "endlesscraftaclysm:block/stripped_nexurian_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "endlesscraftaclysm:block/stripped_nexurian_wood"
+    },
+    "axis=z": {
+      "model": "endlesscraftaclysm:block/stripped_nexurian_wood",
+      "x": 90
+    }
+  }
+}

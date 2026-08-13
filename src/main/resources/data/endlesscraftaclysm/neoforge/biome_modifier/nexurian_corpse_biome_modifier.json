@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "endlesscraftaclysm:nexurian_mainland",
+  "spawners": {
+    "type": "endlesscraftaclysm:nexurian_corpse",
+    "weight": 60,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

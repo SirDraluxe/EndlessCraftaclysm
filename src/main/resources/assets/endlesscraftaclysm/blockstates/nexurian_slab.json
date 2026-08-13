@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "endlesscraftaclysm:block/nexurian_slab"
+    },
+    "type=top": {
+      "model": "endlesscraftaclysm:block/nexurian_slab_top"
+    },
+    "type=double": {
+      "model": "endlesscraftaclysm:block/nexurian_slab_full"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 89,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [
+      "CUSTOM:NexurianMainland"
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"106\" y=\"-107\"><value name=\"feature\"><block type=\"feature_tree_simple\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"type\">dark oak</field><field name=\"base_height\">8</field><field name=\"height_variation_a\">2</field><field name=\"height_variation_b\">0</field><field name=\"force_dirt\">FALSE</field><field name=\"ignore_vines\">TRUE</field><value name=\"dirt\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:NexurianSoil</field></block></value><value name=\"trunk\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:NexurianLog</field></block></value><value name=\"foliage\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:NexurianLeaves</field></block></value><value name=\"root_placer\"><block type=\"root_placer_none\"></block></value><value name=\"decorator0\"><block type=\"tree_decorator_attached_to_leaves\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"probability\">0.03</field><field name=\"exclusion_radius_xz\">1</field><field name=\"exclusion_radius_y\">0</field><field name=\"required_empty_blocks\">2</field><field name=\"direction0\">DOWN</field><value name=\"provider\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:NexurianBugHive</field></block></value></block></value></block></value><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field></block></next></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Scratch",
+    "icon": "scratch_eff",
+    "color": {
+      "value": -13408513,
+      "falpha": 0.0
+    },
+    "onAddedSound": "",
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": "ARMOR",
+        "amount": -0.2,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      },
+      {
+        "attribute": "ARMOR_TOUGHNESS",
+        "amount": -4.0,
+        "operation": "ADD_VALUE"
+      }
+    ],
+    "onStarted": "ScratchEffectStartedapplied",
+    "onExpired": "ScratchEffectStartedapplied"
+  }
+}
