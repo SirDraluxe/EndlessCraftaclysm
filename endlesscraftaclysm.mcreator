@@ -2205,6 +2205,23 @@
         ]
       },
       "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianGalanthis",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_galanthis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianGalanthisRenderer.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_galanthis_spawn_egg.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianGalanthisEntity.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_galanthis_spawn_egg.json",
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_galanthis_biome_modifier.json"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
     }
   ],
   "variable_elements": [
@@ -2508,7 +2525,9 @@
       "entity.endlesscraftaclysm.nexurian_alchemist_raider": "Nexurian Alchemist",
       "entity.endlesscraftaclysm.nexurian_caller_raider": "Nexurian Caller",
       "entity.endlesscraftaclysm.nexurian_beamer_raider": "Nexurian Beamer",
-      "entity.endlesscraftaclysm.nexurian_battlehog_raider": "Nexurian Battlehog"
+      "entity.endlesscraftaclysm.nexurian_battlehog_raider": "Nexurian Battlehog",
+      "item.endlesscraftaclysm.nexurian_galanthis_spawn_egg": "Nexurian Galanthis Spawn Egg",
+      "entity.endlesscraftaclysm.nexurian_galanthis": "Nexurian Galanthis"
     }
   },
   "metadata": {

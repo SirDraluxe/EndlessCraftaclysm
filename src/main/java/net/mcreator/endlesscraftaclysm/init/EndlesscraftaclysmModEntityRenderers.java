@@ -36,5 +36,6 @@ public class EndlesscraftaclysmModEntityRenderers {
 		event.registerEntityRenderer(EndlesscraftaclysmModEntities.NEXURIAN_CALLER_RAIDER.get(), NexurianCallerRaiderRenderer::new);
 		event.registerEntityRenderer(EndlesscraftaclysmModEntities.NEXURIAN_BEAMER_RAIDER.get(), NexurianBeamerRaiderRenderer::new);
 		event.registerEntityRenderer(EndlesscraftaclysmModEntities.NEXURIAN_BATTLEHOG_RAIDER.get(), NexurianBattlehogRaiderRenderer::new);
+		event.registerEntityRenderer(EndlesscraftaclysmModEntities.NEXURIAN_GALANTHIS.get(), NexurianGalanthisRenderer::new);
 	}
 }

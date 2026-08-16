@@ -58,6 +58,7 @@ public class EndlesscraftaclysmModTabs {
 			tabData.accept(EndlesscraftaclysmModItems.NEXURIAN_BATTLEHOG_SPAWN_EGG.get());
 			tabData.accept(EndlesscraftaclysmModItems.NEXURIAN_JAVANICUS_SPAWN_EGG.get());
 			tabData.accept(EndlesscraftaclysmModItems.NEXURIAN_PROIOXIS_SPAWN_EGG.get());
+			tabData.accept(EndlesscraftaclysmModItems.NEXURIAN_GALANTHIS_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(EndlesscraftaclysmModItems.NEXURIAN_STONE_OF_MEMORY.get());
 		}

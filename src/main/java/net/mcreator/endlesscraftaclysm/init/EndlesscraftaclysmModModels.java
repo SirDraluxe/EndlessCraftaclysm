@@ -13,6 +13,7 @@ import net.minecraft.client.model.object.boat.BoatModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 
 import net.mcreator.endlesscraftaclysm.client.model.ModelNexurianJavanicus;
+import net.mcreator.endlesscraftaclysm.client.model.ModelNexurianGalanthis;
 import net.mcreator.endlesscraftaclysm.client.model.ModelNexurianBattlehog;
 
 @EventBusSubscriber(Dist.CLIENT)
@@ -24,6 +25,7 @@ public class EndlesscraftaclysmModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelNexurianJavanicus.LAYER_LOCATION, ModelNexurianJavanicus::createBodyLayer);
 		event.registerLayerDefinition(ModelNexurianBattlehog.LAYER_LOCATION, ModelNexurianBattlehog::createBodyLayer);
+		event.registerLayerDefinition(ModelNexurianGalanthis.LAYER_LOCATION, ModelNexurianGalanthis::createBodyLayer);
 		event.registerLayerDefinition(NEXURIAN_BOAT_LAYER_LOCATION, BoatModel::createBoatModel);
 		event.registerLayerDefinition(NEXURIAN_CHEST_BOAT_LAYER_LOCATION, BoatModel::createChestBoatModel);
 	}
