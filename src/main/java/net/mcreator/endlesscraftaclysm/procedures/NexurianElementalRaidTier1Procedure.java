@@ -579,6 +579,1046 @@ public class NexurianElementalRaidTier1Procedure {
 										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
 				});
 			}
+			if (EndlesscraftaclysmModVariables.NexurianERaidWave == 4) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO,
+									_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"bossbar set nexeraid_bossbar max 36");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO,
+									_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"bossbar set nexeraid_bossbar name {\"text\":\"Nexurian Elemental Raid - Wave 4\",\"color\":\"blue\"}");
+				EndlesscraftaclysmMod.queueServerWork(100, () -> {
+					EndlesscraftaclysmModVariables.NexurianERaidMobRemains = 36;
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "bossbar set nexeraid_bossbar value 36");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+				});
+			}
+			if (EndlesscraftaclysmModVariables.NexurianERaidWave == 5) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO,
+									_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"bossbar set nexeraid_bossbar max 40");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO,
+									_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"bossbar set nexeraid_bossbar name {\"text\":\"Nexurian Elemental Raid - Wave 5\",\"color\":\"blue\"}");
+				EndlesscraftaclysmMod.queueServerWork(100, () -> {
+					EndlesscraftaclysmModVariables.NexurianERaidMobRemains = 40;
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "bossbar set nexeraid_bossbar value 40");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+				});
+			}
+			if (EndlesscraftaclysmModVariables.NexurianERaidWave == 6) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO,
+									_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"bossbar set nexeraid_bossbar max 44");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO,
+									_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"bossbar set nexeraid_bossbar name {\"text\":\"Nexurian Elemental Raid - Wave 6\",\"color\":\"blue\"}");
+				EndlesscraftaclysmMod.queueServerWork(100, () -> {
+					EndlesscraftaclysmModVariables.NexurianERaidMobRemains = 44;
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "bossbar set nexeraid_bossbar value 44");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+				});
+			}
+			if (EndlesscraftaclysmModVariables.NexurianERaidWave == 7) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO,
+									_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"bossbar set nexeraid_bossbar max 48");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO,
+									_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"bossbar set nexeraid_bossbar name {\"text\":\"Nexurian Elemental Raid - Wave 7\",\"color\":\"blue\"}");
+				EndlesscraftaclysmMod.queueServerWork(100, () -> {
+					EndlesscraftaclysmModVariables.NexurianERaidMobRemains = 48;
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "bossbar set nexeraid_bossbar value 48");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+				});
+			}
+			if (EndlesscraftaclysmModVariables.NexurianERaidWave == 8) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO,
+									_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"bossbar set nexeraid_bossbar max 52");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO,
+									_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"bossbar set nexeraid_bossbar name {\"text\":\"Nexurian Elemental Raid - Wave 8\",\"color\":\"blue\"}");
+				EndlesscraftaclysmMod.queueServerWork(100, () -> {
+					EndlesscraftaclysmModVariables.NexurianERaidMobRemains = 52;
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3(EndlesscraftaclysmModVariables.NexurianERaidCenterX, EndlesscraftaclysmModVariables.NexurianERaidCenterY, EndlesscraftaclysmModVariables.NexurianERaidCenterZ), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "bossbar set nexeraid_bossbar value 52");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_battlehog_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_corpse_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 8)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL,
+												new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 8), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO,
+												_level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"summon endlesscraftaclysm:nexurian_alchemist_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 16), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 16)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"summon endlesscraftaclysm:nexurian_armored_bug_raider ~ ~ ~ {ForgeData:{nexeraid:1b},Passengers:[{id:\"endlesscraftaclysm:nexurian_corpse\",HandItems:[{id:\"minecraft:iron_spear\",count:1}]}]}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 0), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 0)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_beamer_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ - 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX + 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
+										new Vec3((EndlesscraftaclysmModVariables.NexurianERaidCenterX - 20), (EndlesscraftaclysmModVariables.NexurianERaidCenterY - 2), (EndlesscraftaclysmModVariables.NexurianERaidCenterZ + 20)), Vec2.ZERO, _level,
+										LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon endlesscraftaclysm:nexurian_caller_raider ~ ~ ~ {ForgeData:{nexeraid:1b}}");
+				});
+			}
 		}
 	}
 }

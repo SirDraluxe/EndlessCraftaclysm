@@ -2222,6 +2222,19 @@
         ]
       },
       "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "GalanthisTorment",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galanthis_torment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/potion/GalanthisTormentMobEffect.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
     }
   ],
   "variable_elements": [
@@ -2527,7 +2540,8 @@
       "entity.endlesscraftaclysm.nexurian_beamer_raider": "Nexurian Beamer",
       "entity.endlesscraftaclysm.nexurian_battlehog_raider": "Nexurian Battlehog",
       "item.endlesscraftaclysm.nexurian_galanthis_spawn_egg": "Nexurian Galanthis Spawn Egg",
-      "entity.endlesscraftaclysm.nexurian_galanthis": "Nexurian Galanthis"
+      "entity.endlesscraftaclysm.nexurian_galanthis": "Nexurian Galanthis",
+      "effect.endlesscraftaclysm.galanthis_torment": "Galanthis Torment"
     }
   },
   "metadata": {
@@ -2622,5 +2636,5 @@
     "currentGenerator": "neoforge-26.1.2",
     "modElementsPackage": "net.mcreator.endlesscraftaclysm"
   },
-  "mcreatorVersion": 202600233218
+  "mcreatorVersion": 202600233518
 }

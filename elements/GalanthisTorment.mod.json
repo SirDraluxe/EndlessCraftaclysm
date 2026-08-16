@@ -1,0 +1,46 @@
+{
+  "_fv": 89,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Galanthis Torment",
+    "icon": "effect_galanthis_torment",
+    "color": {
+      "value": -16777012,
+      "falpha": 0.0
+    },
+    "particle": "ENCHANTMENT_TABLE",
+    "onAddedSound": "",
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": "ATTACK_SPEED",
+        "amount": -0.1,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      },
+      {
+        "attribute": "ARMOR",
+        "amount": -0.1,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      },
+      {
+        "attribute": "ATTACK_DAMAGE",
+        "amount": -2.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": "ENTITY_REACH",
+        "amount": -0.1,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      },
+      {
+        "attribute": "MOVEMENT_SPEED",
+        "amount": -0.1,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ]
+  }
+}

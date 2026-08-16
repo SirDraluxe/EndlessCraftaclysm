@@ -89,5 +89,6 @@
   "entity.endlesscraftaclysm.nexurian_beamer_raider": "Nexurian Beamer",
   "entity.endlesscraftaclysm.nexurian_battlehog_raider": "Nexurian Battlehog",
   "item.endlesscraftaclysm.nexurian_galanthis_spawn_egg": "Nexurian Galanthis Spawn Egg",
-  "entity.endlesscraftaclysm.nexurian_galanthis": "Nexurian Galanthis"
+  "entity.endlesscraftaclysm.nexurian_galanthis": "Nexurian Galanthis",
+  "effect.endlesscraftaclysm.galanthis_torment": "Galanthis Torment"
 }
