@@ -2,10 +2,10 @@
   "_fv": 89,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Nexurian Galanthis",
+    "mobName": "Nexurian Seraph",
     "mobLabel": "",
-    "mobModelName": "ModelNexurianGalanthis",
-    "mobModelTexture": "nexurian_galanthis.png",
+    "mobModelName": "ModelNexurianSeraph",
+    "mobModelTexture": "nexurian_seraph.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -16,7 +16,7 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.5
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
@@ -24,31 +24,31 @@
     "modelLayers": [],
     "animations": [
       {
-        "animation": "CUSTOM:NexurianGalanthisAnimation.idle",
+        "animation": "CUSTOM:NexurianSeraphAnimation.idle",
         "speed": 1.0,
         "walking": false,
         "amplitude": 1.0
       }
     ],
     "modelWidth": 0.6,
-    "modelHeight": 1.2,
+    "modelHeight": 0.9,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
-    "hasSpawnEgg": true,
+    "hasSpawnEgg": false,
     "spawnEggBaseColor": {
-      "value": -16757066,
+      "value": -1,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16711681,
+      "value": -1,
       "falpha": 0.0
     },
     "spawnEggTexture": "",
     "creativeTabs": [
       "MISC"
     ],
-    "isBoss": true,
-    "bossBarColor": "BLUE",
+    "isBoss": false,
+    "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": "",
     "equipmentOffHand": "",
@@ -58,15 +58,15 @@
     "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
+    "attackStrength": 0,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
+    "movementSpeed": 0.42,
     "stepHeight": 0.6,
-    "armorBaseValue": 12.0,
+    "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 64,
-    "health": 270,
+    "health": 40,
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
@@ -75,7 +75,7 @@
     "pushedByFluids": {
       "fixedValue": true
     },
-    "flyingMob": false,
+    "flyingMob": true,
     "inventorySize": 9,
     "inventoryStackSize": 99,
     "disableCollisions": false,
@@ -84,7 +84,7 @@
     "canControlStrafe": false,
     "immuneToFire": false,
     "immuneToArrows": false,
-    "immuneToFallDamage": true,
+    "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
@@ -96,24 +96,25 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": "",
-    "livingSound": "entity.cat_royal.ambient",
-    "hurtSound": "entity.cat_royal.hurt",
-    "deathSound": "entity.cat_royal.death",
+    "livingSound": "",
+    "hurtSound": "entity.generic.hurt",
+    "deathSound": "entity.generic.death",
     "stepSound": "",
     "raidCelebrationSound": "",
     "entityDataEntries": [],
-    "onMobTickUpdate": "NexurianGalanthisOnEntityTickUpdate",
+    "onMobTickUpdate": "NexurianSeraphOnEntityTickUpdate",
+    "onInitialSpawn": "NexurianSeraphOnInitialEntitySpawn",
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\">\n<block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next>\n<block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next>\n<block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next>\n<block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next>\n<block type=\"look_around\"><field name=\"condition\">null,null</field><next>\n<block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next>\n</block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_fly\"><field name=\"radius\">16</field><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">1.4</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
-    "ranged": false,
+    "ranged": true,
     "rangedAttackItem": "",
-    "rangedItemType": "Default item",
+    "rangedItemType": "NexurianBeamerProjectile",
     "rangedAttackInterval": 20,
-    "rangedAttackRadius": 10.0,
+    "rangedAttackRadius": 25.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,

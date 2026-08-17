@@ -91,6 +91,10 @@ public class EndlesscraftaclysmModEntities {
 			EntityType.Builder.<NexurianGalanthisEntity>of(NexurianGalanthisEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.notInPeaceful().sized(0.6f, 1.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<NexurianSeraphEntity>> NEXURIAN_SERAPH = register("nexurian_seraph",
+			EntityType.Builder.<NexurianSeraphEntity>of(NexurianSeraphEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.notInPeaceful().sized(0.6f, 0.9f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -115,6 +119,7 @@ public class EndlesscraftaclysmModEntities {
 		NexurianBeamerRaiderEntity.init(event);
 		NexurianBattlehogRaiderEntity.init(event);
 		NexurianGalanthisEntity.init(event);
+		NexurianSeraphEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -134,5 +139,6 @@ public class EndlesscraftaclysmModEntities {
 		event.put(NEXURIAN_BEAMER_RAIDER.get(), NexurianBeamerRaiderEntity.createAttributes().build());
 		event.put(NEXURIAN_BATTLEHOG_RAIDER.get(), NexurianBattlehogRaiderEntity.createAttributes().build());
 		event.put(NEXURIAN_GALANTHIS.get(), NexurianGalanthisEntity.createAttributes().build());
+		event.put(NEXURIAN_SERAPH.get(), NexurianSeraphEntity.createAttributes().build());
 	}
 }

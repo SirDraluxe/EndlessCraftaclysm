@@ -27,6 +27,7 @@ import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.endlesscraftaclysm.procedures.NexurianGalanthisOnEntityTickUpdateProcedure;
 import net.mcreator.endlesscraftaclysm.init.EndlesscraftaclysmModEntities;
 
 public class NexurianGalanthisEntity extends Monster {
@@ -84,6 +85,12 @@ public class NexurianGalanthisEntity extends Monster {
 		if (this.level().isClientSide()) {
 			this.animationState0.animateWhen(true, this.tickCount);
 		}
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		NexurianGalanthisOnEntityTickUpdateProcedure.execute(this.level(), this);
 	}
 
 	@Override

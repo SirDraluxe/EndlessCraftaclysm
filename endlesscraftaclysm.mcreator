@@ -2235,6 +2235,111 @@
         ]
       },
       "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "NexurianGalanthisOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_galanthis_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianGalanthisOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianSeraph",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_seraph",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_seraph_biome_modifier.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianSeraphRenderer.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_seraph_spawn_egg.json",
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianSeraphEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianSeraphOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_seraph_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianSeraphOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianSeraphOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_seraph_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianSeraphOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
     }
   ],
   "variable_elements": [
@@ -2541,7 +2646,8 @@
       "entity.endlesscraftaclysm.nexurian_battlehog_raider": "Nexurian Battlehog",
       "item.endlesscraftaclysm.nexurian_galanthis_spawn_egg": "Nexurian Galanthis Spawn Egg",
       "entity.endlesscraftaclysm.nexurian_galanthis": "Nexurian Galanthis",
-      "effect.endlesscraftaclysm.galanthis_torment": "Galanthis Torment"
+      "effect.endlesscraftaclysm.galanthis_torment": "Galanthis Torment",
+      "entity.endlesscraftaclysm.nexurian_seraph": "Nexurian Seraph"
     }
   },
   "metadata": {
