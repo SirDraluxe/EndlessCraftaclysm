@@ -92,7 +92,7 @@ public class EndlesscraftaclysmModEntities {
 
 					.notInPeaceful().sized(0.6f, 1.2f));
 	public static final DeferredHolder<EntityType<?>, EntityType<NexurianSeraphEntity>> NEXURIAN_SERAPH = register("nexurian_seraph",
-			EntityType.Builder.<NexurianSeraphEntity>of(NexurianSeraphEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<NexurianSeraphEntity>of(NexurianSeraphEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.notInPeaceful().sized(0.6f, 0.9f));
 

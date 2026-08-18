@@ -102,6 +102,7 @@
     "stepSound": "entity.hoglin.step",
     "raidCelebrationSound": "",
     "entityDataEntries": [],
+    "whenMobDies": "NexurianArmoredBugRaiderEntityDies",
     "onInitialSpawn": "NexurianTurretRaidSpawn",
     "hasAI": true,
     "aiBase": "(none)",

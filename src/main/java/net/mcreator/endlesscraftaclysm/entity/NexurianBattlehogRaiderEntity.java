@@ -28,6 +28,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.endlesscraftaclysm.procedures.NexurianTurretRaidSpawnProcedure;
+import net.mcreator.endlesscraftaclysm.procedures.NexurianArmoredBugRaiderEntityDiesProcedure;
 
 import javax.annotation.Nullable;
 
@@ -88,6 +89,12 @@ public class NexurianBattlehogRaiderEntity extends Monster {
 		if (damagesource.is(DamageTypes.FALL))
 			return false;
 		return super.hurtServer(level, damagesource, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		NexurianArmoredBugRaiderEntityDiesProcedure.execute(this.level(), this);
 	}
 
 	@Override

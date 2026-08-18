@@ -4,24 +4,29 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.entity.projectile.throwableitemprojectile.AbstractThrownPotion;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.*;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.Difficulty;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
@@ -31,7 +36,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.endlesscraftaclysm.procedures.NexurianSeraphOnInitialEntitySpawnProcedure;
 import net.mcreator.endlesscraftaclysm.procedures.NexurianSeraphOnEntityTickUpdateProcedure;
-import net.mcreator.endlesscraftaclysm.init.EndlesscraftaclysmModEntities;
+import net.mcreator.endlesscraftaclysm.procedures.NexurianSeraphEntityDiesProcedure;
 
 import javax.annotation.Nullable;
 
@@ -44,6 +49,7 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+		setPersistenceRequired();
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
@@ -55,7 +61,9 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new Goal() {
+		this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
+		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.goalSelector.addGoal(3, new Goal() {
 			{
 				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
 			}
@@ -77,7 +85,7 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 			public void start() {
 				LivingEntity livingentity = NexurianSeraphEntity.this.getTarget();
 				Vec3 vec3d = livingentity.getEyePosition(1);
-				NexurianSeraphEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
+				NexurianSeraphEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 0.6);
 			}
 
 			@Override
@@ -87,14 +95,14 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 					NexurianSeraphEntity.this.doHurtTarget(this.getServerLevel(livingentity), livingentity);
 				} else {
 					double d0 = NexurianSeraphEntity.this.distanceToSqr(livingentity);
-					if (d0 < 16) {
+					if (d0 < 25) {
 						Vec3 vec3d = livingentity.getEyePosition(1);
-						NexurianSeraphEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
+						NexurianSeraphEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 0.6);
 					}
 				}
 			}
 		});
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1.4, 20) {
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = NexurianSeraphEntity.this.getRandom();
@@ -104,15 +112,18 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
-		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(4, new FloatGoal(this));
-		this.goalSelector.addGoal(5, new LeapAtTargetGoal(this, (float) 1));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 25f) {
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 45, 25f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
 			}
 		});
+	}
+
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
 	}
 
 	@Override
@@ -132,9 +143,26 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 
 	@Override
 	public boolean hurtServer(ServerLevel level, DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.IN_FIRE))
+			return false;
 		if (damagesource.getDirectEntity() instanceof AbstractThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
 			return false;
+		if (damagesource.is(DamageTypes.LIGHTNING_BOLT))
+			return false;
+		if (damagesource.is(DamageTypes.EXPLOSION) || damagesource.is(DamageTypes.PLAYER_EXPLOSION))
+			return false;
 		return super.hurtServer(level, damagesource, amount);
+	}
+
+	@Override
+	public boolean ignoreExplosion(Explosion explosion) {
+		return true;
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		NexurianSeraphEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override
@@ -183,25 +211,18 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 		return (float) this.getAttributeValue(Attributes.FLYING_SPEED);
 	}
 
-	@Override
-	public boolean checkSpawnRules(LevelAccessor level, EntitySpawnReason reason) {
-		return this.level().dimension() == Level.OVERWORLD ? super.checkSpawnRules(level, reason) : true;
-	}
-
 	public static void init(RegisterSpawnPlacementsEvent event) {
-		event.register(EndlesscraftaclysmModEntities.NEXURIAN_SERAPH.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> world.getDifficulty() != Difficulty.PEACEFUL
-				&& (EntitySpawnReason.ignoresLightRequirements(reason) || Monster.isDarkEnoughToSpawn(world, pos, random)) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random), RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.42);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 40);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 64);
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
-		builder = builder.add(Attributes.FLYING_SPEED, 0.42);
+		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
 	}
 }

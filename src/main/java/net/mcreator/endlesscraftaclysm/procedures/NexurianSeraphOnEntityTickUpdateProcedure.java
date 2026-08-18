@@ -15,7 +15,6 @@ public class NexurianSeraphOnEntityTickUpdateProcedure {
 		if (entity == null)
 			return;
 		double SeraphTNTCharge = 0;
-		SeraphTNTCharge = 0;
 		if (!world.isClientSide()) {
 			if (entity.tickCount % 60 <= 0) {
 				if (world instanceof ServerLevel _level)

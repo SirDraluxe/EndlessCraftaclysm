@@ -2267,7 +2267,6 @@
       "registry_name": "nexurian_seraph",
       "metadata": {
         "files": [
-          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_seraph_biome_modifier.json",
           "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianSeraphRenderer.java",
           "src/main/resources/assets/endlesscraftaclysm/items/nexurian_seraph_spawn_egg.json",
           "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianSeraphEntity.java"
@@ -2340,6 +2339,37 @@
         ]
       },
       "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianSeraphEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_seraph_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianSeraphEntityDiesProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
     }
   ],
   "variable_elements": [
@@ -2395,6 +2425,12 @@
       "name": "NexurianERaidWaveCap",
       "type": "number",
       "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "NexurianSeraphCharge",
+      "type": "number",
+      "scope": "map",
       "value": "0"
     }
   ],
