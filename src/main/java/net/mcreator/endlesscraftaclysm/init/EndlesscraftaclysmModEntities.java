@@ -88,13 +88,15 @@ public class EndlesscraftaclysmModEntities {
 
 					.notInPeaceful().sized(1.4f, 1.4f));
 	public static final DeferredHolder<EntityType<?>, EntityType<NexurianGalanthisEntity>> NEXURIAN_GALANTHIS = register("nexurian_galanthis",
-			EntityType.Builder.<NexurianGalanthisEntity>of(NexurianGalanthisEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<NexurianGalanthisEntity>of(NexurianGalanthisEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.notInPeaceful().sized(0.6f, 1.2f));
 	public static final DeferredHolder<EntityType<?>, EntityType<NexurianSeraphEntity>> NEXURIAN_SERAPH = register("nexurian_seraph",
 			EntityType.Builder.<NexurianSeraphEntity>of(NexurianSeraphEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
-					.notInPeaceful().sized(0.6f, 0.9f));
+					.notInPeaceful().sized(0.9f, 0.9f));
+	public static final DeferredHolder<EntityType<?>, EntityType<NexurianGalanthisAntiGravityChargeEntity>> NEXURIAN_GALANTHIS_ANTI_GRAVITY_CHARGE = register("nexurian_galanthis_anti_gravity_charge",
+			EntityType.Builder.<NexurianGalanthisAntiGravityChargeEntity>of(NexurianGalanthisAntiGravityChargeEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

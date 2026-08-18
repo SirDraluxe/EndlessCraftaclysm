@@ -46,7 +46,7 @@ public class NexurianSeraphRenderer extends MobRenderer<NexurianSeraphEntity, Li
 
 	@Override
 	protected void scale(LivingEntityRenderState state, PoseStack poseStack) {
-		poseStack.scale(1.5f, 1.5f, 1.5f);
+		poseStack.scale(2.5f, 2.5f, 2.5f);
 	}
 
 	private static final class AnimatedModel extends ModelNexurianSeraph {

@@ -51,6 +51,7 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 		setNoAi(false);
 		setPersistenceRequired();
 		this.moveControl = new FlyingMoveControl(this, 10, true);
+		refreshDimensions();
 	}
 
 	@Override
@@ -102,7 +103,7 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 				}
 			}
 		});
-		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1, 20) {
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 0.65, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = NexurianSeraphEntity.this.getRandom();
@@ -192,6 +193,11 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 	}
 
 	@Override
+	public EntityDimensions getDefaultDimensions(Pose pose) {
+		return super.getDefaultDimensions(pose).scale(1.5f);
+	}
+
+	@Override
 	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
 	}
 
@@ -216,13 +222,13 @@ public class NexurianSeraphEntity extends Monster implements RangedAttackMob {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 40);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.21);
+		builder = builder.add(Attributes.MAX_HEALTH, 27);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 64);
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
-		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
+		builder = builder.add(Attributes.FLYING_SPEED, 0.21);
 		return builder;
 	}
 }

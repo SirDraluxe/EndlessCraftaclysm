@@ -6,6 +6,7 @@ import net.neoforged.neoforge.common.NeoForgeMod;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.entity.projectile.throwableitemprojectile.AbstractThrownPotion;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -28,6 +29,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.endlesscraftaclysm.procedures.NexurianGalanthisOnEntityTickUpdateProcedure;
+import net.mcreator.endlesscraftaclysm.procedures.NexurianGalanthisEntityDiesProcedure;
 import net.mcreator.endlesscraftaclysm.init.EndlesscraftaclysmModEntities;
 
 public class NexurianGalanthisEntity extends Monster {
@@ -72,11 +74,28 @@ public class NexurianGalanthisEntity extends Monster {
 
 	@Override
 	public boolean hurtServer(ServerLevel level, DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.IN_FIRE))
+			return false;
 		if (damagesource.getDirectEntity() instanceof AbstractThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
 			return false;
 		if (damagesource.is(DamageTypes.FALL))
 			return false;
+		if (damagesource.is(DamageTypes.LIGHTNING_BOLT))
+			return false;
+		if (damagesource.is(DamageTypes.EXPLOSION) || damagesource.is(DamageTypes.PLAYER_EXPLOSION))
+			return false;
 		return super.hurtServer(level, damagesource, amount);
+	}
+
+	@Override
+	public boolean ignoreExplosion(Explosion explosion) {
+		return true;
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		NexurianGalanthisEntityDiesProcedure.execute();
 	}
 
 	@Override
@@ -90,7 +109,7 @@ public class NexurianGalanthisEntity extends Monster {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		NexurianGalanthisOnEntityTickUpdateProcedure.execute(this.level(), this);
+		NexurianGalanthisOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

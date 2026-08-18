@@ -22,6 +22,8 @@ public class EndlesscraftaclysmModVariables {
 	public static double NexurianERaidMobCount = 0;
 	public static double NexurianERaidWaveCap = 0;
 	public static double NexurianSeraphCharge = 0;
+	public static double NexurianGalanthisSummonCharge = 0;
+	public static double NexurianGalanthisRageCharge = 0;
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {

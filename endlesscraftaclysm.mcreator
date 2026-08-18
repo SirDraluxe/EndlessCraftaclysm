@@ -2249,6 +2249,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -2370,6 +2382,52 @@
         ]
       },
       "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianGalanthisAntiGravityChargeProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_galanthis_anti_gravity_charge_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianGalanthisAntiGravityChargeProjectileHitsPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "NexurianGalanthisAntiGravityCharge",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_galanthis_anti_gravity_charge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianGalanthisAntiGravityChargeEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "NexurianGalanthisEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_galanthis_entity_dies",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianGalanthisEntityDiesProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Mobs"
     }
   ],
   "variable_elements": [
@@ -2432,6 +2490,18 @@
       "type": "number",
       "scope": "global",
       "value": "0"
+    },
+    {
+      "name": "NexurianGalanthisSummonCharge",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "NexurianGalanthisRageCharge",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -2459,14 +2529,6 @@
     ],
     "ITEMS:minecraft:planks": [
       "CUSTOM:NexurianPlanks"
-    ],
-    "ENTITIES:mod:tier_1_nexeraid": [
-      "CUSTOM:NexurianArmoredBugRaider",
-      "CUSTOM:NexurianCorpseRaider",
-      "CUSTOM:NexurianAlchemistRaider",
-      "CUSTOM:NexurianCallerRaider",
-      "CUSTOM:NexurianBeamerRaider",
-      "CUSTOM:NexurianBattlehogRaider"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~NexurianHangingSign@CUSTOM:NexurianHangingSign.wall",
@@ -2586,6 +2648,15 @@
     "ITEMS:minecraft:meat": [
       "~CookedBattlehogPorkchop@CUSTOM:CookedBattlehogPorkchop",
       "~BattlehogPorkchop@CUSTOM:BattlehogPorkchop"
+    ],
+    "ENTITIES:minecraft:nexeraid_tier_1": [
+      "CUSTOM:NexurianArmoredBugRaider",
+      "CUSTOM:NexurianCorpseRaider",
+      "CUSTOM:NexurianAlchemistRaider",
+      "CUSTOM:NexurianCallerRaider",
+      "CUSTOM:NexurianBeamerRaider",
+      "CUSTOM:NexurianBattlehogRaider",
+      "CUSTOM:NexurianGalanthis"
     ]
   },
   "tab_element_order": {},

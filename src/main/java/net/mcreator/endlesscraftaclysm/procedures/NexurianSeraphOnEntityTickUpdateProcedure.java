@@ -18,6 +18,14 @@ public class NexurianSeraphOnEntityTickUpdateProcedure {
 			return;
 		double SeraphTNTCharge = 0;
 		if (!world.isClientSide()) {
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands().performPrefixedCommand(
+						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"effect give @n[type=endlesscraftaclysm:nexurian_galanthis] minecraft:resistance infinite 5");
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands().performPrefixedCommand(
+						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"effect give @n[type=endlesscraftaclysm:nexurian_galanthis] minecraft:regeneration infinite 1");
 			if (entity.tickCount % 60 <= 0) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
