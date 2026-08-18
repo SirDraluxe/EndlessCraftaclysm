@@ -2430,7 +2430,7 @@
     {
       "name": "NexurianSeraphCharge",
       "type": "number",
-      "scope": "map",
+      "scope": "global",
       "value": "0"
     }
   ],

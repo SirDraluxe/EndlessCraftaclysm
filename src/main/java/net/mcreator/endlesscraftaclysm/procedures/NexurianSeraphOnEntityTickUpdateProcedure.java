@@ -10,6 +10,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.endlesscraftaclysm.network.EndlesscraftaclysmModVariables;
+
 public class NexurianSeraphOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
@@ -21,13 +23,13 @@ public class NexurianSeraphOnEntityTickUpdateProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(
 							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"execute at @p run summon lightning_bolt ~ ~ ~");
-				SeraphTNTCharge = SeraphTNTCharge + 1;
-				if (SeraphTNTCharge == 5) {
+				EndlesscraftaclysmModVariables.NexurianSeraphCharge = EndlesscraftaclysmModVariables.NexurianSeraphCharge + 1;
+				if (EndlesscraftaclysmModVariables.NexurianSeraphCharge == 5) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"execute at @p run summon tnt ~ ~ ~");
-					SeraphTNTCharge = 0;
+					EndlesscraftaclysmModVariables.NexurianSeraphCharge = 0;
 				}
 			}
 		}
