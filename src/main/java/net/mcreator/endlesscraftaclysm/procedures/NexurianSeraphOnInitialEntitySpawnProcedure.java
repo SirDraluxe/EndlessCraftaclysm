@@ -15,11 +15,11 @@ public class NexurianSeraphOnInitialEntitySpawnProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"effect give @n[type=endlesscraftaclysm:nexurian_galanthis] minecraft:resistance infinite 5");
+						"effect give @n[type=endlesscraftaclysm:nexurian_galanthis] minecraft:resistance 800 3");
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"effect give @n[type=endlesscraftaclysm:nexurian_galanthis] minecraft:regeneration infinite 1");
+						"effect give @n[type=endlesscraftaclysm:nexurian_galanthis] minecraft:regeneration 800 2");
 		}
 	}
 }

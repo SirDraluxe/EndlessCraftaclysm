@@ -15,11 +15,11 @@ public class NexurianSeraphEntityDiesProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"effect clear @n[type=endlesscraftaclysm:nexurian_seraph] minecraft:resistance");
+						"effect clear @e[type=endlesscraftaclysm:nexurian_galanthis] minecraft:resistance");
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"effect clear @n[type=endlesscraftaclysm:nexurian_seraph] minecraft:regeneration");
+						"effect clear @e[type=endlesscraftaclysm:nexurian_galanthis] minecraft:regeneration");
 		}
 	}
 }
