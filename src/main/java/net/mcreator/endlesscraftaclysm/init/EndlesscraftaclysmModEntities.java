@@ -97,6 +97,8 @@ public class EndlesscraftaclysmModEntities {
 					.notInPeaceful().sized(0.9f, 0.9f));
 	public static final DeferredHolder<EntityType<?>, EntityType<NexurianGalanthisAntiGravityChargeEntity>> NEXURIAN_GALANTHIS_ANTI_GRAVITY_CHARGE = register("nexurian_galanthis_anti_gravity_charge",
 			EntityType.Builder.<NexurianGalanthisAntiGravityChargeEntity>of(NexurianGalanthisAntiGravityChargeEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<NexurianGalanthisAntiGravityChargeRageModeEntity>> NEXURIAN_GALANTHIS_ANTI_GRAVITY_CHARGE_RAGE_MODE = register("nexurian_galanthis_anti_gravity_charge_rage_mode", EntityType.Builder
+			.<NexurianGalanthisAntiGravityChargeRageModeEntity>of(NexurianGalanthisAntiGravityChargeRageModeEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

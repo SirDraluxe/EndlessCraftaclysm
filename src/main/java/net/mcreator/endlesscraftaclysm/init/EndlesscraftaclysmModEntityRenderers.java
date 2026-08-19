@@ -39,5 +39,6 @@ public class EndlesscraftaclysmModEntityRenderers {
 		event.registerEntityRenderer(EndlesscraftaclysmModEntities.NEXURIAN_GALANTHIS.get(), NexurianGalanthisRenderer::new);
 		event.registerEntityRenderer(EndlesscraftaclysmModEntities.NEXURIAN_SERAPH.get(), NexurianSeraphRenderer::new);
 		event.registerEntityRenderer(EndlesscraftaclysmModEntities.NEXURIAN_GALANTHIS_ANTI_GRAVITY_CHARGE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(EndlesscraftaclysmModEntities.NEXURIAN_GALANTHIS_ANTI_GRAVITY_CHARGE_RAGE_MODE.get(), ThrownItemRenderer::new);
 	}
 }

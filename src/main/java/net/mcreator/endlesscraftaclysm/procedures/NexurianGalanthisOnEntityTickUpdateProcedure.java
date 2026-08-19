@@ -24,6 +24,7 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.endlesscraftaclysm.network.EndlesscraftaclysmModVariables;
 import net.mcreator.endlesscraftaclysm.init.EndlesscraftaclysmModEntities;
+import net.mcreator.endlesscraftaclysm.entity.NexurianGalanthisAntiGravityChargeRageModeEntity;
 import net.mcreator.endlesscraftaclysm.entity.NexurianGalanthisAntiGravityChargeEntity;
 
 public class NexurianGalanthisOnEntityTickUpdateProcedure {
@@ -54,10 +55,6 @@ public class NexurianGalanthisOnEntityTickUpdateProcedure {
 			if (entity.tickCount % 40 <= 0) {
 				GalanthisSkillroll = Mth.nextInt(RandomSource.create(), 0, 100);
 				if (GalanthisSkillroll >= 80) {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(
-								new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"execute at @p run summon lightning_bolt ~ ~ ~");
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
@@ -127,10 +124,29 @@ public class NexurianGalanthisOnEntityTickUpdateProcedure {
 							_level.getServer().getCommands().performPrefixedCommand(
 									new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 									"execute at @p run summon lightning_bolt ~ ~ ~");
-						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"execute at @p run summon lightning_bolt ~ ~ ~");
+					} else if (GalanthisRageroll >= 4) {
+						{
+							Entity _shootFrom = entity;
+							Level projectileLevel = _shootFrom.level();
+							if (!projectileLevel.isClientSide()) {
+								Projectile _entityToSpawn = initArrowProjectile(new NexurianGalanthisAntiGravityChargeRageModeEntity(EndlesscraftaclysmModEntities.NEXURIAN_GALANTHIS_ANTI_GRAVITY_CHARGE_RAGE_MODE.get(), 0, 0, 0, projectileLevel,
+										createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)), null, 5, true, false, false, AbstractArrow.Pickup.DISALLOWED);
+								_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+								_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) 1.2, 0);
+								projectileLevel.addFreshEntity(_entityToSpawn);
+							}
+						}
+						{
+							Entity _shootFrom = entity;
+							Level projectileLevel = _shootFrom.level();
+							if (!projectileLevel.isClientSide()) {
+								Projectile _entityToSpawn = initArrowProjectile(new NexurianGalanthisAntiGravityChargeRageModeEntity(EndlesscraftaclysmModEntities.NEXURIAN_GALANTHIS_ANTI_GRAVITY_CHARGE_RAGE_MODE.get(), 0, 0, 0, projectileLevel,
+										createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)), null, 5, true, false, false, AbstractArrow.Pickup.DISALLOWED);
+								_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+								_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) 1.2, 0);
+								projectileLevel.addFreshEntity(_entityToSpawn);
+							}
+						}
 					} else {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(

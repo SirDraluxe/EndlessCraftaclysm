@@ -2428,6 +2428,69 @@
         ]
       },
       "path": "~/Nexurian/Mobs"
+    },
+    {
+      "name": "NexurianGalanthisAntiGravityChargeRageMode",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_galanthis_anti_gravity_charge_rage_mode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianGalanthisAntiGravityChargeRageModeEntity.java"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "NexurianGalanthisAntiGravityChargeRageModeProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_galanthis_anti_gravity_charge_rage_mode_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianGalanthisAntiGravityChargeRageModeProjectileHitsBlockProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "NexurianGalanthisAntiGravityChargeRageModeProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_galanthis_anti_gravity_charge_rage_mode_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianGalanthisAntiGravityChargeRageModeProjectileHitsPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/ProjectileDump"
     }
   ],
   "variable_elements": [
