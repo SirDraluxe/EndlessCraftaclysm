@@ -7,6 +7,6 @@ public class NexurianGalanthisAntiGravityChargeProjectileHitsPlayerProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		entity.setDeltaMovement(new Vec3((-0.6), 0.6, (-0.6)));
+		entity.setDeltaMovement(new Vec3((-0.72), 0.72, (-0.72)));
 	}
 }
