@@ -34,6 +34,24 @@ public class NexurianGalanthisOnEntityTickUpdateProcedure {
 		double GalanthisSkillroll = 0;
 		double GalanthisRageroll = 0;
 		if (!world.isClientSide()) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 180) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"effect give @e[type=player] endlesscraftaclysm:galanthis_torment 10 0");
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 90) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"effect give @e[type=player] endlesscraftaclysm:galanthis_torment 10 1");
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 45) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"effect give @e[type=player] endlesscraftaclysm:galanthis_torment 10 1");
+			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 180 && EndlesscraftaclysmModVariables.NexurianGalanthisSummonCharge == 0) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
@@ -41,12 +59,19 @@ public class NexurianGalanthisOnEntityTickUpdateProcedure {
 							"summon endlesscraftaclysm:nexurian_seraph ~ ~5 ~");
 				EndlesscraftaclysmModVariables.NexurianGalanthisSummonCharge = 1;
 			}
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 90 && EndlesscraftaclysmModVariables.NexurianGalanthisSummonCharge == 1) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 120 && EndlesscraftaclysmModVariables.NexurianGalanthisSummonCharge == 1) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
 							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"summon endlesscraftaclysm:nexurian_seraph ~ ~5 ~");
 				EndlesscraftaclysmModVariables.NexurianGalanthisSummonCharge = 2;
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 60 && EndlesscraftaclysmModVariables.NexurianGalanthisSummonCharge == 2) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"summon endlesscraftaclysm:nexurian_seraph ~ ~5 ~");
+				EndlesscraftaclysmModVariables.NexurianGalanthisSummonCharge = 3;
 			}
 			if (entity.tickCount % 40 <= 0) {
 				GalanthisSkillroll = Mth.nextInt(RandomSource.create(), 0, 100);

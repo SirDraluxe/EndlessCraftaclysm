@@ -19,8 +19,8 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.endlesscraftaclysm.procedures.NexurianGalanthisAntiGravityChargeProjectileHitsPlayerProcedure;
-import net.mcreator.endlesscraftaclysm.procedures.NexurianBeamerProjectileProjectileHitsBlockProcedure;
+import net.mcreator.endlesscraftaclysm.procedures.NexurianGalanthisAntiGravityChargeRageModeProjectileHitsPlayerProcedure;
+import net.mcreator.endlesscraftaclysm.procedures.NexurianGalanthisAntiGravityChargeRageModeProjectileHitsBlockProcedure;
 import net.mcreator.endlesscraftaclysm.init.EndlesscraftaclysmModEntities;
 
 import javax.annotation.Nullable;
@@ -81,13 +81,13 @@ public class NexurianGalanthisAntiGravityChargeRageModeEntity extends AbstractAr
 	@Override
 	public void playerTouch(Player entity) {
 		super.playerTouch(entity);
-		NexurianGalanthisAntiGravityChargeProjectileHitsPlayerProcedure.execute(entity);
+		NexurianGalanthisAntiGravityChargeRageModeProjectileHitsPlayerProcedure.execute(entity);
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		NexurianBeamerProjectileProjectileHitsBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		NexurianGalanthisAntiGravityChargeRageModeProjectileHitsBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override

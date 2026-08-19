@@ -15,7 +15,7 @@
     "customModelTexture": "",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onHitsBlock": "NexurianBeamerProjectileProjectileHitsBlock",
-    "onHitsPlayer": "NexurianGalanthisAntiGravityChargeProjectileHitsPlayer"
+    "onHitsBlock": "NexurianGalanthisAntiGravityChargeRageModeProjectileHitsBlock",
+    "onHitsPlayer": "NexurianGalanthisAntiGravityChargeRageModeProjectileHitsPlayer"
   }
 }
