@@ -2217,8 +2217,7 @@
           "src/main/java/net/mcreator/endlesscraftaclysm/client/renderer/NexurianGalanthisRenderer.java",
           "src/main/resources/assets/endlesscraftaclysm/items/nexurian_galanthis_spawn_egg.json",
           "src/main/java/net/mcreator/endlesscraftaclysm/entity/NexurianGalanthisEntity.java",
-          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_galanthis_spawn_egg.json",
-          "src/main/resources/data/endlesscraftaclysm/neoforge/biome_modifier/nexurian_galanthis_biome_modifier.json"
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_galanthis_spawn_egg.json"
         ]
       },
       "path": "~/Nexurian/Mobs"

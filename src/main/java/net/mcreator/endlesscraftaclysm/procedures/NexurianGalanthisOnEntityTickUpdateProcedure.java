@@ -46,10 +46,6 @@ public class NexurianGalanthisOnEntityTickUpdateProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(
 							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"summon endlesscraftaclysm:nexurian_seraph ~ ~5 ~");
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"summon endlesscraftaclysm:nexurian_seraph ~ ~7 ~");
 				EndlesscraftaclysmModVariables.NexurianGalanthisSummonCharge = 2;
 			}
 			if (entity.tickCount % 40 <= 0) {
