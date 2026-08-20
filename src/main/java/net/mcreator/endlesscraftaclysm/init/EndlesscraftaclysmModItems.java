@@ -77,6 +77,8 @@ public class EndlesscraftaclysmModItems {
 	public static final DeferredItem<Item> NEXURIAN_STONE_OF_MEMORY;
 	public static final DeferredItem<Item> NEXURIAN_PROIOXIS_SPAWN_EGG;
 	public static final DeferredItem<Item> NEXURIAN_GALANTHIS_SPAWN_EGG;
+	public static final DeferredItem<Item> NEXURIAN_ENERGIZED_STRING;
+	public static final DeferredItem<Item> ALCHEMIST_SCORCH;
 	static {
 		NEXURIAN_LOG = block(EndlesscraftaclysmModBlocks.NEXURIAN_LOG);
 		NEXURIAN_WOOD = block(EndlesscraftaclysmModBlocks.NEXURIAN_WOOD);
@@ -138,6 +140,8 @@ public class EndlesscraftaclysmModItems {
 		NEXURIAN_STONE_OF_MEMORY = register("nexurian_stone_of_memory", NexurianStoneOfMemoryItem::new);
 		NEXURIAN_PROIOXIS_SPAWN_EGG = register("nexurian_proioxis_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(EndlesscraftaclysmModEntities.NEXURIAN_PROIOXIS.get())));
 		NEXURIAN_GALANTHIS_SPAWN_EGG = register("nexurian_galanthis_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(EndlesscraftaclysmModEntities.NEXURIAN_GALANTHIS.get())));
+		NEXURIAN_ENERGIZED_STRING = register("nexurian_energized_string", NexurianEnergizedStringItem::new);
+		ALCHEMIST_SCORCH = register("alchemist_scorch", AlchemistScorchItem::new);
 	}
 
 	// Start of user code block custom items

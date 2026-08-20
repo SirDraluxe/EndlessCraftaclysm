@@ -2495,6 +2495,36 @@
         ]
       },
       "path": "~/Nexurian/ProjectileDump"
+    },
+    {
+      "name": "NexurianEnergizedString",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_energized_string",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianEnergizedStringItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_energized_string.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_energized_string.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "AlchemistScorch",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemist_scorch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/AlchemistScorchItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/alchemist_scorch.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/alchemist_scorch.json"
+        ]
+      },
+      "path": "~/Nexurian/Misc"
     }
   ],
   "variable_elements": [
@@ -2821,7 +2851,9 @@
       "item.endlesscraftaclysm.nexurian_galanthis_spawn_egg": "Nexurian Galanthis Spawn Egg",
       "entity.endlesscraftaclysm.nexurian_galanthis": "Nexurian Galanthis",
       "effect.endlesscraftaclysm.galanthis_torment": "Galanthis Torment",
-      "entity.endlesscraftaclysm.nexurian_seraph": "Nexurian Seraph"
+      "entity.endlesscraftaclysm.nexurian_seraph": "Nexurian Seraph",
+      "item.endlesscraftaclysm.nexurian_energized_string": "Nexurian Energized String",
+      "item.endlesscraftaclysm.alchemist_scorch": "Alchemist Scorch"
     }
   },
   "metadata": {

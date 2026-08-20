@@ -91,5 +91,7 @@
   "item.endlesscraftaclysm.nexurian_galanthis_spawn_egg": "Nexurian Galanthis Spawn Egg",
   "entity.endlesscraftaclysm.nexurian_galanthis": "Nexurian Galanthis",
   "effect.endlesscraftaclysm.galanthis_torment": "Galanthis Torment",
-  "entity.endlesscraftaclysm.nexurian_seraph": "Nexurian Seraph"
+  "entity.endlesscraftaclysm.nexurian_seraph": "Nexurian Seraph",
+  "item.endlesscraftaclysm.nexurian_energized_string": "Nexurian Energized String",
+  "item.endlesscraftaclysm.alchemist_scorch": "Alchemist Scorch"
 }
