@@ -2525,6 +2525,21 @@
         ]
       },
       "path": "~/Nexurian/Misc"
+    },
+    {
+      "name": "NexurianAlmaSword",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_alma_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianAlmaSwordItem.java",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_alma_sword.json",
+          "src/main/resources/assets/endlesscraftaclysm/items/nexurian_alma_sword.json"
+        ]
+      },
+      "path": "~/Nexurian/Weapon"
     }
   ],
   "variable_elements": [
@@ -2853,7 +2868,8 @@
       "effect.endlesscraftaclysm.galanthis_torment": "Galanthis Torment",
       "entity.endlesscraftaclysm.nexurian_seraph": "Nexurian Seraph",
       "item.endlesscraftaclysm.nexurian_energized_string": "Nexurian Energized String",
-      "item.endlesscraftaclysm.alchemist_scorch": "Alchemist Scorch"
+      "item.endlesscraftaclysm.alchemist_scorch": "Alchemist Scorch",
+      "item.endlesscraftaclysm.nexurian_alma_sword": "Nexurian Alma Sword"
     }
   },
   "metadata": {
@@ -2927,6 +2943,10 @@
           },
           {
             "name": "NexurianElementalRaid",
+            "children": []
+          },
+          {
+            "name": "Weapon",
             "children": []
           }
         ]

@@ -1,0 +1,7 @@
+{
+  "parent": "endlesscraftaclysm:custom/nexurianalmasword",
+  "textures": {
+    "0": "endlesscraftaclysm:block/nexxurian_alma_sword",
+    "particle": "endlesscraftaclysm:item/nexurian_alma_sword"
+  }
+}
