@@ -19,6 +19,7 @@ import net.mcreator.endlesscraftaclysm.potion.ScratchMobEffect;
 import net.mcreator.endlesscraftaclysm.potion.GalanthisTormentMobEffect;
 import net.mcreator.endlesscraftaclysm.potion.ArmorTheftedMobEffect;
 import net.mcreator.endlesscraftaclysm.potion.ArmorTheftMobEffect;
+import net.mcreator.endlesscraftaclysm.potion.AlmaDominanceMobEffect;
 import net.mcreator.endlesscraftaclysm.EndlesscraftaclysmMod;
 
 @EventBusSubscriber
@@ -28,6 +29,7 @@ public class EndlesscraftaclysmModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> GALANTHIS_TORMENT = REGISTRY.register("galanthis_torment", GalanthisTormentMobEffect::new);
 	public static final DeferredHolder<MobEffect, MobEffect> ARMOR_THEFT = REGISTRY.register("armor_theft", ArmorTheftMobEffect::new);
 	public static final DeferredHolder<MobEffect, MobEffect> ARMOR_THEFTED = REGISTRY.register("armor_thefted", ArmorTheftedMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> ALMA_DOMINANCE = REGISTRY.register("alma_dominance", AlmaDominanceMobEffect::new);
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

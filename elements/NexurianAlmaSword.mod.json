@@ -5,7 +5,7 @@
     "renderType": 1,
     "texture": "nexurian_alma_sword",
     "customModelName": "nexurianalmasword:default",
-    "guiTexture": "",
+    "guiTexture": "nexurian_alma_sword",
     "customProperties": {},
     "states": [],
     "animations": [],

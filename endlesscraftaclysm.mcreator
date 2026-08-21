@@ -2536,6 +2536,7 @@
         "files": [
           "src/main/java/net/mcreator/endlesscraftaclysm/item/NexurianAlmaSwordItem.java",
           "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_alma_sword.json",
+          "src/main/resources/assets/endlesscraftaclysm/models/item/nexurian_alma_sword_gui.json",
           "src/main/resources/assets/endlesscraftaclysm/items/nexurian_alma_sword.json"
         ]
       },
@@ -2563,6 +2564,73 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/endlesscraftaclysm/potion/ArmorTheftedMobEffect.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "AlmaDominance",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alma_dominance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/potion/AlmaDominanceMobEffect.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "NexurianAlmaSwordLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_alma_sword_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianAlmaSwordLivingEntityIsHitWithItemProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Weapon"
+    },
+    {
+      "name": "NexurianAlmaSwordItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexurian_alma_sword_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianAlmaSwordItemInHandTickProcedure.java"
         ]
       },
       "path": "~/Nexurian/Effects"
@@ -2897,7 +2965,8 @@
       "item.endlesscraftaclysm.alchemist_scorch": "Alchemist Scorch",
       "item.endlesscraftaclysm.nexurian_alma_sword": "Nexurian Alma Sword",
       "effect.endlesscraftaclysm.armor_theft": "Armor Theft",
-      "effect.endlesscraftaclysm.armor_thefted": "Armor Thefted"
+      "effect.endlesscraftaclysm.armor_thefted": "Armor Thefted",
+      "effect.endlesscraftaclysm.alma_dominance": "Alma Dominance"
     }
   },
   "metadata": {

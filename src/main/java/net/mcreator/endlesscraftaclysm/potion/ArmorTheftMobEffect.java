@@ -11,7 +11,7 @@ import net.mcreator.endlesscraftaclysm.EndlesscraftaclysmMod;
 
 public class ArmorTheftMobEffect extends MobEffect {
 	public ArmorTheftMobEffect() {
-		super(MobEffectCategory.NEUTRAL, -16750900);
+		super(MobEffectCategory.BENEFICIAL, -16750900);
 		this.withSoundOnAdded(BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.iron.break")));
 		this.addAttributeModifier(Attributes.ARMOR, Identifier.fromNamespaceAndPath(EndlesscraftaclysmMod.MODID, "effect.armor_theft_0"), 1, AttributeModifier.Operation.ADD_VALUE);
 	}
