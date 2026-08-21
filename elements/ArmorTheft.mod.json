@@ -1,0 +1,25 @@
+{
+  "_fv": 89,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Armor Theft",
+    "icon": "armor_theft",
+    "color": {
+      "value": -16750900,
+      "falpha": 0.0
+    },
+    "onAddedSound": "block.iron.break",
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": "ARMOR",
+        "amount": 1.0,
+        "operation": "ADD_VALUE"
+      }
+    ]
+  }
+}

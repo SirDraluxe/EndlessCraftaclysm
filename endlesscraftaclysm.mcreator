@@ -2540,6 +2540,32 @@
         ]
       },
       "path": "~/Nexurian/Weapon"
+    },
+    {
+      "name": "ArmorTheft",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_theft",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/potion/ArmorTheftMobEffect.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "ArmorThefted",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_thefted",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/potion/ArmorTheftedMobEffect.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
     }
   ],
   "variable_elements": [
@@ -2869,7 +2895,9 @@
       "entity.endlesscraftaclysm.nexurian_seraph": "Nexurian Seraph",
       "item.endlesscraftaclysm.nexurian_energized_string": "Nexurian Energized String",
       "item.endlesscraftaclysm.alchemist_scorch": "Alchemist Scorch",
-      "item.endlesscraftaclysm.nexurian_alma_sword": "Nexurian Alma Sword"
+      "item.endlesscraftaclysm.nexurian_alma_sword": "Nexurian Alma Sword",
+      "effect.endlesscraftaclysm.armor_theft": "Armor Theft",
+      "effect.endlesscraftaclysm.armor_thefted": "Armor Thefted"
     }
   },
   "metadata": {

@@ -17,6 +17,8 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.endlesscraftaclysm.procedures.ScratchEffectStartedappliedProcedure;
 import net.mcreator.endlesscraftaclysm.potion.ScratchMobEffect;
 import net.mcreator.endlesscraftaclysm.potion.GalanthisTormentMobEffect;
+import net.mcreator.endlesscraftaclysm.potion.ArmorTheftedMobEffect;
+import net.mcreator.endlesscraftaclysm.potion.ArmorTheftMobEffect;
 import net.mcreator.endlesscraftaclysm.EndlesscraftaclysmMod;
 
 @EventBusSubscriber
@@ -24,6 +26,8 @@ public class EndlesscraftaclysmModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(Registries.MOB_EFFECT, EndlesscraftaclysmMod.MODID);
 	public static final DeferredHolder<MobEffect, MobEffect> SCRATCH = REGISTRY.register("scratch", ScratchMobEffect::new);
 	public static final DeferredHolder<MobEffect, MobEffect> GALANTHIS_TORMENT = REGISTRY.register("galanthis_torment", GalanthisTormentMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> ARMOR_THEFT = REGISTRY.register("armor_theft", ArmorTheftMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> ARMOR_THEFTED = REGISTRY.register("armor_thefted", ArmorTheftedMobEffect::new);
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
