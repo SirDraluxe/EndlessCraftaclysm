@@ -20,6 +20,7 @@
         "amount": 1.5,
         "operation": "ADD_VALUE"
       }
-    ]
+    ],
+    "onActiveTick": "ArmorTheftOnEffectActiveTick"
   }
 }

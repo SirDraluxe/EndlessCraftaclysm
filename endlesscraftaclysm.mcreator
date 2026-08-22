@@ -2641,6 +2641,25 @@
         ]
       },
       "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "ArmorTheftOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_theft_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/ArmorTheftOnEffectActiveTickProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
     }
   ],
   "variable_elements": [
