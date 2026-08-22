@@ -13,6 +13,6 @@ public class ArmorTheftedMobEffect extends MobEffect {
 	public ArmorTheftedMobEffect() {
 		super(MobEffectCategory.HARMFUL, -16750900);
 		this.withSoundOnAdded(BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.iron.break")));
-		this.addAttributeModifier(Attributes.ARMOR, Identifier.fromNamespaceAndPath(EndlesscraftaclysmMod.MODID, "effect.armor_thefted_0"), -1.5, AttributeModifier.Operation.ADD_VALUE);
+		this.addAttributeModifier(Attributes.ARMOR, Identifier.fromNamespaceAndPath(EndlesscraftaclysmMod.MODID, "effect.alma_armor_thefted_0"), -1.5, AttributeModifier.Operation.ADD_VALUE);
 	}
 }

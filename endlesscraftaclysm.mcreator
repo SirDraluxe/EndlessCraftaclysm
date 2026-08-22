@@ -2547,7 +2547,7 @@
       "type": "potioneffect",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_theft",
+      "registry_name": "alma_armor_theft",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/endlesscraftaclysm/potion/ArmorTheftMobEffect.java"
@@ -2560,7 +2560,7 @@
       "type": "potioneffect",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_thefted",
+      "registry_name": "alma_armor_thefted",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/endlesscraftaclysm/potion/ArmorTheftedMobEffect.java"
@@ -2762,6 +2762,15 @@
     "ITEMS:minecraft:planks": [
       "CUSTOM:NexurianPlanks"
     ],
+    "ENTITIES:minecraft:nexeraid_tier_1": [
+      "CUSTOM:NexurianArmoredBugRaider",
+      "CUSTOM:NexurianCorpseRaider",
+      "CUSTOM:NexurianAlchemistRaider",
+      "CUSTOM:NexurianCallerRaider",
+      "CUSTOM:NexurianBeamerRaider",
+      "CUSTOM:NexurianBattlehogRaider",
+      "CUSTOM:NexurianGalanthis"
+    ],
     "BLOCKS:minecraft:mineable/axe": [
       "~NexurianHangingSign@CUSTOM:NexurianHangingSign.wall",
       "~NexurianHangingSign@CUSTOM:NexurianHangingSign",
@@ -2880,15 +2889,6 @@
     "ITEMS:minecraft:meat": [
       "~CookedBattlehogPorkchop@CUSTOM:CookedBattlehogPorkchop",
       "~BattlehogPorkchop@CUSTOM:BattlehogPorkchop"
-    ],
-    "ENTITIES:minecraft:nexeraid_tier_1": [
-      "CUSTOM:NexurianArmoredBugRaider",
-      "CUSTOM:NexurianCorpseRaider",
-      "CUSTOM:NexurianAlchemistRaider",
-      "CUSTOM:NexurianCallerRaider",
-      "CUSTOM:NexurianBeamerRaider",
-      "CUSTOM:NexurianBattlehogRaider",
-      "CUSTOM:NexurianGalanthis"
     ]
   },
   "tab_element_order": {},
@@ -2990,9 +2990,9 @@
       "item.endlesscraftaclysm.nexurian_energized_string": "Nexurian Energized String",
       "item.endlesscraftaclysm.alchemist_scorch": "Alchemist Scorch",
       "item.endlesscraftaclysm.nexurian_alma_sword": "Nexurian Alma Sword",
-      "effect.endlesscraftaclysm.armor_theft": "Armor Theft",
-      "effect.endlesscraftaclysm.armor_thefted": "Armor Thefted",
-      "effect.endlesscraftaclysm.alma_dominance": "Alma Dominance"
+      "effect.endlesscraftaclysm.alma_dominance": "Alma Dominance",
+      "effect.endlesscraftaclysm.alma_armor_theft": "Armor Theft",
+      "effect.endlesscraftaclysm.alma_armor_thefted": "Armor Thefted"
     }
   },
   "metadata": {

@@ -95,7 +95,7 @@
   "item.endlesscraftaclysm.nexurian_energized_string": "Nexurian Energized String",
   "item.endlesscraftaclysm.alchemist_scorch": "Alchemist Scorch",
   "item.endlesscraftaclysm.nexurian_alma_sword": "Nexurian Alma Sword",
-  "effect.endlesscraftaclysm.armor_theft": "Armor Theft",
-  "effect.endlesscraftaclysm.armor_thefted": "Armor Thefted",
-  "effect.endlesscraftaclysm.alma_dominance": "Alma Dominance"
+  "effect.endlesscraftaclysm.alma_dominance": "Alma Dominance",
+  "effect.endlesscraftaclysm.alma_armor_theft": "Armor Theft",
+  "effect.endlesscraftaclysm.alma_armor_thefted": "Armor Thefted"
 }

@@ -29,22 +29,22 @@ public class NexurianAlmaSwordLivingEntityIsHitWithItemProcedure {
 					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ALMA_DOMINANCE, 200, 4, true, true));
 			}
 		} else {
-			if ((sourceentity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFT)) == false) {
+			if ((sourceentity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT)) == false) {
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ARMOR_THEFT, 200, 0, true, true));
+					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT, 200, 0, true, true));
 				ArmorTheftedActivationProcedure.execute(entity);
 			}
-			if ((sourceentity instanceof LivingEntity _livEnt12 && _livEnt12.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFT)) == true
-					&& (sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFT) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFT).getAmplifier() : 0) < 4) {
-				ArmorSteal = sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFT) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFT).getAmplifier() : 0;
+			if ((sourceentity instanceof LivingEntity _livEnt12 && _livEnt12.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT)) == true
+					&& (sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT).getAmplifier() : 0) < 4) {
+				ArmorSteal = sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT).getAmplifier() : 0;
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ARMOR_THEFT, 200, (int) (ArmorSteal + 1), true, true));
+					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT, 200, (int) (ArmorSteal + 1), true, true));
 				ArmorTheftedActivationProcedure.execute(entity);
 			}
-			if ((sourceentity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFT)) == true
-					&& (sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFT) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFT).getAmplifier() : 0) >= 4) {
+			if ((sourceentity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT)) == true
+					&& (sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT).getAmplifier() : 0) >= 4) {
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ARMOR_THEFT, 200, 4, true, true));
+					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT, 200, 4, true, true));
 				ArmorTheftedActivationProcedure.execute(entity);
 			}
 		}

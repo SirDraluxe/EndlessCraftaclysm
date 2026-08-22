@@ -27,8 +27,8 @@ public class EndlesscraftaclysmModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(Registries.MOB_EFFECT, EndlesscraftaclysmMod.MODID);
 	public static final DeferredHolder<MobEffect, MobEffect> SCRATCH = REGISTRY.register("scratch", ScratchMobEffect::new);
 	public static final DeferredHolder<MobEffect, MobEffect> GALANTHIS_TORMENT = REGISTRY.register("galanthis_torment", GalanthisTormentMobEffect::new);
-	public static final DeferredHolder<MobEffect, MobEffect> ARMOR_THEFT = REGISTRY.register("armor_theft", ArmorTheftMobEffect::new);
-	public static final DeferredHolder<MobEffect, MobEffect> ARMOR_THEFTED = REGISTRY.register("armor_thefted", ArmorTheftedMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> ALMA_ARMOR_THEFT = REGISTRY.register("alma_armor_theft", ArmorTheftMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> ALMA_ARMOR_THEFTED = REGISTRY.register("alma_armor_thefted", ArmorTheftedMobEffect::new);
 	public static final DeferredHolder<MobEffect, MobEffect> ALMA_DOMINANCE = REGISTRY.register("alma_dominance", AlmaDominanceMobEffect::new);
 
 	@SubscribeEvent

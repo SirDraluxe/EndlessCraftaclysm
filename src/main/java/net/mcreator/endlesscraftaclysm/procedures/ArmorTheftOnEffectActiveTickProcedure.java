@@ -13,7 +13,7 @@ public class ArmorTheftOnEffectActiveTickProcedure {
 			return;
 		if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == EndlesscraftaclysmModItems.NEXURIAN_ALMA_SWORD.get()) == false) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFT);
+				_entity.removeEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFT);
 		}
 	}
 }

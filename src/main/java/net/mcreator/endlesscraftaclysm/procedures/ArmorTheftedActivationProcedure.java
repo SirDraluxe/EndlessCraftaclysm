@@ -12,20 +12,20 @@ public class ArmorTheftedActivationProcedure {
 			return;
 		double ArmorTheftedOverall = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) > 0) {
-			if ((entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED)) == false) {
+			if ((entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED)) == false) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED, 200, 0, true, true));
+					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED, 200, 0, true, true));
 			}
-			if ((entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED)) == true
-					&& (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED).getAmplifier() : 0) < 4) {
-				ArmorTheftedOverall = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED).getAmplifier() : 0;
+			if ((entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED)) == true
+					&& (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED).getAmplifier() : 0) < 4) {
+				ArmorTheftedOverall = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED).getAmplifier() : 0;
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED, 200, (int) (ArmorTheftedOverall + 1), true, true));
+					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED, 200, (int) (ArmorTheftedOverall + 1), true, true));
 			}
-			if ((entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED)) == true
-					&& (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED).getAmplifier() : 0) >= 4) {
+			if ((entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED)) == true
+					&& (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED) ? _livEnt.getEffect(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED).getAmplifier() : 0) >= 4) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ARMOR_THEFTED, 200, 4, true, true));
+					_entity.addEffect(new MobEffectInstance(EndlesscraftaclysmModMobEffects.ALMA_ARMOR_THEFTED, 200, 4, true, true));
 			}
 		}
 	}
