@@ -14,6 +14,13 @@
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": []
+    "modifiers": [
+      {
+        "attribute": "ATTACK_DAMAGE",
+        "amount": 2.0,
+        "operation": "ADD_VALUE"
+      }
+    ],
+    "onActiveTick": "AlmaDominanceOnEffectActiveTick"
   }
 }

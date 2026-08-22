@@ -2596,14 +2596,6 @@
           {
             "name": "sourceentity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
@@ -2613,24 +2605,39 @@
       "path": "~/Nexurian/Weapon"
     },
     {
-      "name": "NexurianAlmaSwordItemInHandTick",
+      "name": "AlmaDominanceOnEffectActiveTick",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "nexurian_alma_sword_item_in_hand_tick",
+      "registry_name": "alma_dominance_on_effect_active_tick",
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/NexurianAlmaSwordItemInHandTickProcedure.java"
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/AlmaDominanceOnEffectActiveTickProcedure.java"
+        ]
+      },
+      "path": "~/Nexurian/Effects"
+    },
+    {
+      "name": "ArmorTheftedActivation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_thefted_activation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/endlesscraftaclysm/procedures/ArmorTheftedActivationProcedure.java"
         ]
       },
       "path": "~/Nexurian/Effects"

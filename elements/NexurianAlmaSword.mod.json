@@ -25,8 +25,8 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
-    "damageVsEntity": 5.5,
-    "attackSpeed": 1.72,
+    "damageVsEntity": 4.5,
+    "attackSpeed": 1.66,
     "specialInformation": {
       "fixedValue": []
     },
@@ -38,6 +38,7 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
+    "onEntityHitWith": "NexurianAlmaSwordLivingEntityIsHitWithItem",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
